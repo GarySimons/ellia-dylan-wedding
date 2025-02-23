@@ -1,0 +1,17 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 90vw;
+    max-width: 700px;
+    position: absolute;
+    bottom: 0;
+    border-top: 0.08rem solid #a65759;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.7rem;
+    // .footer-text {
+        
+    // }
+}
