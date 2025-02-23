@@ -12,7 +12,7 @@ const Navbar = () => {
       <Link to="/">
         <p className="logo">E&D</p>
       </Link>
-      <div>
+      <div className="nav-links-container">
         <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link to="/">HOME</Link>
