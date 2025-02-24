@@ -8,7 +8,12 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="home-main-container">
-        <h1>HOME</h1>
+        <div className="name-container">
+          <h1 className="name">Ellia</h1>
+          <h1 className="name colour-white">&</h1>
+          <h1 className="name">Dylan</h1>
+        </div>
+        <p className="wedding">WEDDING</p>
       </div>
 
       <Footer />

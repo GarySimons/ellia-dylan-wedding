@@ -1,11 +1,36 @@
 .home-main-container {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    max-width: 700px;
-    min-height: 80vh;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 700px;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+.name-container {
+  display: flex;
+  gap: -1rem;
+
+  .name {
+    font-family: "Grandiflora One", serif;
+    font-weight: 500;
+    font-size: 9.375rem;
+    color: #a65759;
+    z-index: 1;
+
+    &.colour-white {
+      color: #ffffff;
+      margin: -3rem -3.5rem;
+      z-index: 0;
+      font-size: 13rem;
+    }
+  }
+}
+
+.wedding {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin: -0.5rem auto 1rem auto;
 }
