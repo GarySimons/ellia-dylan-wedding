@@ -1,19 +1,17 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "./HomeStyles.scss";
 
-const Home = () => {
+const Details = () => {
   return (
     <div>
       <Navbar />
-      <div className="home-main-container">
-        <h1>HOME</h1>
+      <div className="main-container">
+        <h1>Details</h1>
       </div>
-
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Details;
