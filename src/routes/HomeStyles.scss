@@ -5,13 +5,14 @@
   align-items: center;
   width: 90vw;
   max-width: 700px;
-  min-height: 80vh;
+  min-height: 75vh;
   margin: 0 auto;
 }
 
 .name-container {
   display: flex;
   gap: -1rem;
+  margin-top: -2rem;
 
   .name {
     font-family: "Grandiflora One", serif;
@@ -37,7 +38,7 @@
 
 .home-date-container {
   display: flex;
-  gap: 1rem;
+  gap: 0.7rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -51,8 +52,6 @@
 
   .home-line {
     width: 100%;
-    // height: 0.15rem;
-    // color: #a65759;
     border: 0.04rem solid #a65759;
   }
 
@@ -60,4 +59,10 @@
     font-size: 1rem;
     font-weight: 400;
   }
+}
+
+.wax-image {
+  height: 7rem;
+  width: auto;
+  margin: 3rem 0 0 0;
 }
