@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavbarStyles.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -6,6 +6,18 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [hamburgerClick, setHamburgerClick] = useState(false);
   const handleClick = () => setHamburgerClick(!hamburgerClick);
+
+  useEffect(() => {
+    if (hamburgerClick) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [hamburgerClick]);
 
   return (
     <div className="header">
