@@ -58,7 +58,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
+
+  @media (min-width: 480px) {
+    margin: 2rem 0 0 0;
+  }
 
   .home-date {
     font-size: 1.75rem;
@@ -82,7 +86,7 @@
 .wax-image {
   height: 7rem;
   width: auto;
-  margin: 1.5rem 0 0 0;
+  margin: 1rem 0 0 0;
 
   @media (min-width: 480px) {
     margin: 3rem 0 0 0;
