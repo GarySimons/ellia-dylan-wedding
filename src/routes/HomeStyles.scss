@@ -11,21 +11,36 @@
 
 .name-container {
   display: flex;
-  gap: -1rem;
+  flex-direction: column;
   margin-top: -2rem;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+  }
 
   .name {
     font-family: "Grandiflora One", serif;
     font-weight: 500;
-    font-size: 9.375rem;
+    font-size: 7.5rem;
     color: #a65759;
     z-index: 1;
 
+    @media (min-width: 480px) {
+      font-size: 9.375rem;
+    }
+
     &.colour-white {
       color: #ffffff;
-      margin: -3rem -3.5rem;
+      margin: -10rem -3.5rem;
       z-index: 0;
-      font-size: 13rem;
+      font-size: 11rem;
+
+      @media (min-width: 480px) {
+        margin: -3rem -3.5rem;
+        font-size: 13rem;
+      }
     }
   }
 }
@@ -48,21 +63,28 @@
   .home-date {
     font-size: 1.75rem;
     font-weight: 400;
+    text-align: center;
   }
 
   .home-line {
     width: 100%;
     border: 0.04rem solid #a65759;
+    text-align: center;
   }
 
   .home-address {
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
   }
 }
 
 .wax-image {
   height: 7rem;
   width: auto;
-  margin: 3rem 0 0 0;
+  margin: 1.5rem 0 0 0;
+
+  @media (min-width: 480px) {
+    margin: 3rem 0 0 0;
+  }
 }
