@@ -1,0 +1,44 @@
+[
+  {
+    "name": "The Norfolk Arms",
+    "address": "High St, Arundel BN18 9AB",
+    "phone": "01903 882314",
+    "website": "https://www.norfolkarmsarundel.com/",
+    "websiteName": "www.norfolkarmsarundel.com"
+  },
+  {
+    "name": "The Swan Hotel",
+    "address": "27-29 High St, Arundel BN18 9AG",
+    "phone": "01903 882314",
+    "website": "https://www.swanarundel.co.uk/",
+    "websiteName": "www.swanarundel.co.uk"
+  },
+  {
+    "name": "House Arundel: Boutique B&B",
+    "address": "11 High St, Arundel BN18 9AD",
+    "phone": "07745 526945",
+    "website": "https://www.housearundel.co.uk/",
+    "websiteName": "www.housearundel.co.uk"
+  },
+  {
+    "name": "The Norfolk Arms",
+    "address": "High St, Arundel BN18 9AB",
+    "phone": "01903 882314",
+    "website": "https://www.norfolkarmsarundel.com/",
+    "websiteName": "www.norfolkarmsarundel.com"
+  },
+  {
+    "name": "The Swan Hotel",
+    "address": "27-29 High St, Arundel BN18 9AG",
+    "phone": "01903 882314",
+    "website": "https://www.swanarundel.co.uk/",
+    "websiteName": "www.swanarundel.co.uk"
+  },
+  {
+    "name": "House Arundel: Boutique B&B",
+    "address": "11 High St, Arundel BN18 9AD",
+    "phone": "07745 526945",
+    "website": "https://www.housearundel.co.uk/",
+    "websiteName": "www.housearundel.co.uk"
+  }
+]

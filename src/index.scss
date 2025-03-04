@@ -36,24 +36,24 @@ code {
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90vw;
-    max-width: 700px;
-    min-height: 75vh;
-    margin: 2rem auto 4rem auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90vw;
+  max-width: 700px;
+  min-height: 75vh;
+  margin: 2rem auto 4rem auto;
+  text-align: center;
 
-    .page-heading {
-      font-family: "Grandiflora One", serif;
-      font-weight: 900;
-      font-size: 4rem;
-      color: #a65759;
-      border-bottom: 0.04rem solid #a65759;
-      margin: 0 0 3rem 0;
-    }
+  .page-heading {
+    font-family: "Grandiflora One", serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #a65759;
+    border-bottom: 0.04rem solid #a65759;
+    margin: 0 0 3rem 0;
+  }
 }
 
 .page-content-container {
@@ -61,37 +61,41 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .page-subtile {
-    font-size: 1.4rem;
-    font-weight: 400;
+.page-subtile {
+  font-size: 1.4rem;
+  font-weight: 400;
 
-    &.bold {
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
+  &.bold {
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+}
+
+.page-text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+
+  &.no-margin {
+    margin-bottom: 0;
   }
 
-  .page-text {
-    font-size: 1rem;
+  &.bold {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  &.link {
     font-weight: 400;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-    
-    &.bold {
-      font-weight: 800;
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
+    text-decoration: underline;
+    margin: -1.1rem 0 1rem 0;
 
-    &.link {
-      font-weight: 400;
-      margin-bottom: 0;
-      text-decoration: underline;
-      margin: -1rem 0 1rem 0;
-
-      &:hover {
-        opacity: 0.6;
-      }
+    &:hover {
+      opacity: 0.6;
     }
   }
 }
