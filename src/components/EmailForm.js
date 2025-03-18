@@ -11,7 +11,6 @@ const EmailForm = () => {
 
   const [status, setStatus] = useState("");
 
-  // Handle form input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,7 +19,6 @@ const EmailForm = () => {
     });
   };
 
-  // Send email
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -30,18 +28,17 @@ const EmailForm = () => {
       return;
     }
 
-    // Using EmailJS to send the email
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Access service ID from environment variable
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Access template ID from environment variable
-        e.target, // Send the entire form as input
-        process.env.REACT_APP_EMAILJS_USER_ID // Access user ID from environment variable
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
-          setStatus("Message sent successfully!");
+          setStatus("Message sent successfully! Thank you");
         },
         (error) => {
           console.log(error.text);
@@ -54,39 +51,39 @@ const EmailForm = () => {
     <div className="contact-form">
       <form onSubmit={sendEmail}>
         <div>
-          <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
             name="name"
+            placeholder="Name"
             value={formData.name}
             onChange={handleInputChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
             name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleInputChange}
             required
           />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             name="message"
+            placeholder="Please send us a message"
             value={formData.message}
             onChange={handleInputChange}
             required
           ></textarea>
         </div>
         <div>
-          <button type="submit">Send Message</button>
+          <button type="submit">Send</button>
         </div>
       </form>
       {status && <p>{status}</p>}

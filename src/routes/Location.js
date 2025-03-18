@@ -7,7 +7,7 @@ const Location = () => {
     <div>
       <Navbar />
       <div className="main-container">
-        <h1>Location</h1>
+        <h1 className="page-heading">Location</h1>
       </div>
       <Footer />
     </div>

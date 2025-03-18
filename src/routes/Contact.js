@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <Navbar />
       <div className="main-container">
-        <h1>Contact</h1>
+        <h1 className="page-heading">Contact</h1>
         <EmailForm />
       </div>
       <Footer />
