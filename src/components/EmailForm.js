@@ -39,12 +39,25 @@ const EmailForm = () => {
         (result) => {
           console.log(result.text);
           setStatus("Message sent successfully! Thank you");
+
+          // Clear the form and reset status after successful submission
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error.text);
           setStatus("Failed to send message. Please try again.");
         }
-      );
+      )
+      .finally(() => {
+        // Clear the status after some time (optional)
+        setTimeout(() => {
+          setStatus("");
+        }, 5000); // Clears the status after 5 seconds
+      });
   };
 
   return (
