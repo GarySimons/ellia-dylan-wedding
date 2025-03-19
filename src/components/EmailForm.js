@@ -22,7 +22,6 @@ const EmailForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Check if all fields are filled
     if (!formData.name || !formData.email || !formData.message) {
       setStatus("Please fill out all fields.");
       return;
@@ -40,7 +39,6 @@ const EmailForm = () => {
           console.log(result.text);
           setStatus("Message sent successfully! Thank you");
 
-          // Clear the form and reset status after successful submission
           setFormData({
             name: "",
             email: "",
@@ -53,10 +51,9 @@ const EmailForm = () => {
         }
       )
       .finally(() => {
-        // Clear the status after some time (optional)
         setTimeout(() => {
           setStatus("");
-        }, 5000); // Clears the status after 5 seconds
+        }, 5000);
       });
   };
 

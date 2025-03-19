@@ -6,6 +6,7 @@ import Details from "./routes/Details";
 import Location from "./routes/Location";
 import Accommodation from "./routes/Accommodation";
 import Contact from "./routes/Contact";
+import AccommodationGrid from "./routes/AccommodationGrid";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/location" element={<Location />} />
         <Route path="/accommodation" element={<Accommodation />} />
+        <Route path="/accommodation-grid" element={<AccommodationGrid />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
