@@ -39,9 +39,6 @@ const Navbar = () => {
             <Link to="/accommodation">ACCOMMODATION</Link>
           </li>
           <li>
-            <Link to="/accommodation-grid">ACCOMMODATION GRID</Link>
-          </li>
-          <li>
             <Link to="/contact">CONTACT</Link>
           </li>
         </ul>

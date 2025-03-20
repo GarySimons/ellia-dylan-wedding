@@ -14,31 +14,73 @@
     "websiteName": "www.swanarundel.co.uk"
   },
   {
-    "name": "House Arundel: Boutique B&B",
+    "name": "House Arundel",
     "address": "11 High St, Arundel BN18 9AD",
     "phone": "07745 526945",
     "website": "https://www.housearundel.co.uk/",
     "websiteName": "www.housearundel.co.uk"
   },
   {
-    "name": "The Norfolk Arms",
-    "address": "High St, Arundel BN18 9AB",
-    "phone": "01903 882314",
-    "website": "https://www.norfolkarmsarundel.com/",
-    "websiteName": "www.norfolkarmsarundel.com"
+    "name": "Avisford Park Hotel",
+    "address": "Walberton, Arundel BN18 0LS",
+    "phone": "01243 558300",
+    "website": "https://avisfordparkhotel.com/",
+    "websiteName": "www.avisfordparkhotel.com"
   },
   {
-    "name": "The Swan Hotel",
-    "address": "27-29 High St, Arundel BN18 9AG",
-    "phone": "01903 882314",
-    "website": "https://www.swanarundel.co.uk/",
-    "websiteName": "www.swanarundel.co.uk"
+    "name": "The White Swan",
+    "address": "16 Chichester Rd, Arundel BN18 0AD",
+    "phone": "01903 882677",
+    "website": "https://white-swan-arundel.co.uk/",
+    "websiteName": "www.white-swan-arundel.co.uk"
   },
   {
-    "name": "House Arundel: Boutique B&B",
-    "address": "11 High St, Arundel BN18 9AD",
-    "phone": "07745 526945",
-    "website": "https://www.housearundel.co.uk/",
-    "websiteName": "www.housearundel.co.uk"
+    "name": "The St Mary’s Gate Inn",
+    "address": "London Rd, Arundel BN18 9BA",
+    "phone": "01798 831992",
+    "website": "https://stmarysgate.co.uk/",
+    "websiteName": "www.stmarysgate.co.uk"
+  },
+  {
+    "name": "Amberley Castle",
+    "address": "Amberley Castle, Arundel BN18 9LT",
+    "phone": "01798 831992",
+    "website": "https://www.amberleycastle.co.uk/",
+    "websiteName": "www.amberleycastle.co.uk"
+  },
+  {
+    "name": "The Arundel Park Hotel",
+    "address": "The Causeway, Arundel BN18 9JL",
+    "phone": "01903 882588",
+    "website": "https://www.arundelparkhotel.co.uk/",
+    "websiteName": "www.arundelparkhotel.co.uk"
+  },
+  {
+    "name": "Amberley Black Horse",
+    "address": "High St, Amberley, Arundel BN18 9NL",
+    "phone": "01798 831183",
+    "website": "https://www.amberleyblackhorse.co.uk/",
+    "websiteName": "www.amberleyblackhorse.co.uk"
+  },
+  {
+    "name": "Arden House B&B",
+    "address": "4 Queens Ln, Arundel BN18 9JN",
+    "phone": "07775 991933",
+    "website": "https://www.ardenhousearundel.com/",
+    "websiteName": "www.ardenhousearundel.com"
+  },
+  {
+    "name": "The Pig - in the South Downs",
+    "address": "Madehurst, Arundel BN18 0NL",
+    "phone": "0345 225 9494",
+    "website": "https://www.thepighotel.com/",
+    "websiteName": "www.thepighotel.com"
+  },
+  {
+    "name": "Comfort Inn Arundel",
+    "address": "Lyminster Road, Arundel BN17 7QQ",
+    "phone": "01903 840840",
+    "website": "https://www.choicehotels.com/united-kingdom/arundel/comfort-inn-hotels",
+    "websiteName": "www.choicehotels.com"
   }
 ]

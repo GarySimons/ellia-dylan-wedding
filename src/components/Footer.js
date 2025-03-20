@@ -8,7 +8,8 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <p>
-        &copy; copyright {currentYear}:{" "}
+        design&nbsp;&nbsp;|&nbsp;&nbsp;build&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
+        copyright {currentYear}:{" "}
         <a
           href="https://www.garysimons.co.uk/"
           target="_blank"

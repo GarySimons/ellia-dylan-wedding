@@ -72,6 +72,18 @@ code {
     box-sizing: border-box;
   }
 
+  .page-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.4;
+  
+    &.bold {
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+  }
+
   .page-text {
     font-size: 1rem;
     font-weight: 400;
