@@ -57,7 +57,7 @@ body.no-scroll {
       font-weight: 700;
 
       &:hover {
-        color: #000000;
+        opacity: 0.5;
       }
 
       @media (min-width: 480px) {
@@ -69,7 +69,10 @@ body.no-scroll {
 }
 
 .nav-menu a.active-link {
-  color: #000000;
+  color: #a65759;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08rem;
+  text-underline-offset: 0.35rem;
 }
 
 .nav-menu.active {

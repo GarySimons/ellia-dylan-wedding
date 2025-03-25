@@ -3,12 +3,12 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "500px",
 };
 
 const center = {
-  lat: 50.888298,
-  lng: -0.531737,
+  lat: 50.880158,
+  lng: -0.543511,
 };
 
 const mapStyles = [
@@ -16,7 +16,7 @@ const mapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#f5f5f5",
+        color: "#d4d4d4",
       },
     ],
   },
@@ -179,7 +179,7 @@ const Map = () => {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={12}
+        zoom={13}
         options={{
           styles: mapStyles,
         }}
