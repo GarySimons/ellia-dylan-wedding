@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./NavbarStyles.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [hamburgerClick, setHamburgerClick] = useState(false);
+  const location = useLocation();
+
   const handleClick = () => setHamburgerClick(!hamburgerClick);
 
   useEffect(() => {
@@ -21,25 +23,52 @@ const Navbar = () => {
 
   return (
     <div className="header">
-      <Link to="/">
+      <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
         <p className="logo">E&D</p>
       </Link>
       <div className="nav-links-container">
         <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
           <li>
-            <Link to="/">HOME</Link>
+            <Link
+              to="/"
+              className={location.pathname === "/" ? "active-link" : ""}
+            >
+              HOME
+            </Link>
           </li>
           <li>
-            <Link to="/details">DETAILS</Link>
+            <Link
+              to="/details"
+              className={location.pathname === "/details" ? "active-link" : ""}
+            >
+              DETAILS
+            </Link>
           </li>
           <li>
-            <Link to="/location">LOCATION</Link>
+            <Link
+              to="/location"
+              className={location.pathname === "/location" ? "active-link" : ""}
+            >
+              LOCATION
+            </Link>
           </li>
           <li>
-            <Link to="/accommodation">ACCOMMODATION</Link>
+            <Link
+              to="/accommodation"
+              className={
+                location.pathname === "/accommodation" ? "active-link" : ""
+              }
+            >
+              ACCOMMODATION
+            </Link>
           </li>
           <li>
-            <Link to="/contact">CONTACT</Link>
+            <Link
+              to="/contact"
+              className={location.pathname === "/contact" ? "active-link" : ""}
+            >
+              CONTACT
+            </Link>
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
