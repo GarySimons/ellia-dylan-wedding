@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Map from "../components/Map";
 
 const Location = () => {
   return (
@@ -8,6 +9,7 @@ const Location = () => {
       <Navbar />
       <div className="main-container">
         <h1 className="page-heading">Location</h1>
+        <Map />
       </div>
       <Footer />
     </div>
