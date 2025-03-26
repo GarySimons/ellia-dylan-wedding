@@ -43,24 +43,37 @@ code {
   width: 90vw;
   max-width: 700px;
   min-height: 75vh;
-  margin: 2rem auto 4rem auto;
+  margin: 1rem auto 4rem auto;
   text-align: center;
+
+  @media screen and (min-width:420px) {
+    margin: 2rem auto 4rem auto;
+  }
 
   .page-heading {
     font-family: "Grandiflora One", serif;
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #a65759;
     border-bottom: 0.08rem solid #a65759;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
+
+    @media screen and (min-width:420px) {
+      font-size: 3.5rem;
+      margin: 0 0 3rem 0;
+    }
   }
 
   .hotel-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem 2rem;
+    gap: 1rem;
     justify-content: center;
     width: 100%;
+
+    @media screen and (min-width:420px) {
+      gap: 1.5rem 2rem;
+    }
   }
 
   .hotel-card {
@@ -73,10 +86,14 @@ code {
   }
 
   .page-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 0;
     line-height: 1.4;
+
+    @media screen and (min-width:420px) {
+      font-size: 1.3rem;
+    }
   
     &.bold {
       font-weight: 800;
@@ -104,12 +121,20 @@ code {
       margin-bottom: 0;
       text-decoration: underline;
       text-decoration-thickness: 0.08rem;
-      text-underline-offset: 0.3rem;
+      text-underline-offset: 0.2rem;
       margin: -1.1rem 0 1rem 0;
 
       &:hover {
         opacity: 0.6;
       }
+    }
+
+    &.bold-link {
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08rem;
+      text-underline-offset: 0.2rem;
+      margin: -1.1rem 0 1rem 0;
     }
   }
 

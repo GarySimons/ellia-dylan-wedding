@@ -23,7 +23,7 @@
   .name {
     font-family: "Grandiflora One", serif;
     font-weight: 500;
-    font-size: 7.5rem;
+    font-size: 7.25rem;
     color: #a65759;
     z-index: 1;
 
@@ -77,16 +77,20 @@
   }
 
   .home-address {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     text-align: center;
+
+    @media (min-width: 480px) {
+      font-size: 1rem;
+    }
   }
 }
 
 .wax-image {
   height: 7rem;
   width: auto;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 1rem 0;
 
   @media (min-width: 480px) {
     margin: 3rem 0 0 0;

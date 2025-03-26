@@ -21,6 +21,11 @@ const Details = () => {
             South Stoke Barn, Arundel, West Sussex BN18 9PF
           </p>
           <p className="page-text link">
+            <a href="https://www.southstokebarn.co.uk/" target="_blank">
+              www.southstokebarn.co.uk
+            </a>
+          </p>
+          <p className="page-text link">
             <Link to="/location">Directions</Link>
           </p>
           <p className="page-text bold">Time</p>

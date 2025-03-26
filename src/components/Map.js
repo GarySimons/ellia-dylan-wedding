@@ -4,6 +4,7 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 const containerStyle = {
   width: "100%",
   height: "500px",
+  margin: "1rem 0 0 0",
 };
 
 const center = {
