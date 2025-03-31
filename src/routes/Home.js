@@ -9,12 +9,14 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="home-main-container">
-        <div className="name-container">
-          <h1 className="name">Ellia</h1>
-          <h1 className="name colour-white">&</h1>
-          <h1 className="name">Dylan</h1>
+        <div className="ranged-left-container">
+          <p className="wedding">THE WEDDING OF</p>
         </div>
-        <p className="wedding">WEDDING</p>
+        <div className="name-container">
+          <h1 className="name ellia">Ellia</h1>
+          <h1 className="name and">&</h1>
+          <h1 className="name dylan">Dylan</h1>
+        </div>
         <div className="home-date-container">
           <p className="home-date">23.05.26</p>
           <hr className="home-line" />

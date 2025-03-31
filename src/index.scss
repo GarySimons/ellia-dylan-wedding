@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 * {
   box-sizing: border-box;
@@ -19,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: #eadcbf;
+  background: #f7f3e2;
 }
 
 ul {
@@ -51,15 +52,15 @@ code {
   }
 
   .page-heading {
-    font-family: "Grandiflora One", serif;
+    font-family: "Prata", serif;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #a65759;
     border-bottom: 0.08rem solid #a65759;
     margin: 0 0 2rem 0;
 
     @media screen and (min-width:420px) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       margin: 0 0 3rem 0;
     }
   }

@@ -9,46 +9,69 @@
   margin: 0 auto;
 }
 
+.ranged-left-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 1rem;
+
+  @media (min-width: 480px) {
+    justify-content: flex-start;
+  }
+
+}
+
 .name-container {
   display: flex;
   flex-direction: column;
   margin-top: -2rem;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 
   @media (min-width: 480px) {
     flex-direction: row;
+    gap: 0;
   }
 
   .name {
-    font-family: "Grandiflora One", serif;
-    font-weight: 500;
-    font-size: 7.25rem;
-    color: #a65759;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size:6.15rem;
+    color: #692a32;
     z-index: 1;
 
     @media (min-width: 480px) {
-      font-size: 9.375rem;
+      font-size: 8rem;
     }
 
-    &.colour-white {
-      color: #ffffff;
-      margin: -10rem -3.5rem;
+    &.and {
+      // font-family: "Grandiflora One", serif;
+      color: #d0958d;
+      margin: -9.5rem -3.5rem;
       z-index: 0;
       font-size: 11rem;
+      opacity: 0.5;
 
       @media (min-width: 480px) {
         margin: -3rem -3.5rem;
         font-size: 13rem;
+        opacity: 1;
       }
     }
   }
 }
 
 .wedding {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 900;
-  margin: -0.5rem auto 1rem auto;
+  margin: 0rem 0 01rem 0;
+
+  @media (min-width: 480px) {
+    margin: 0rem 0 0 0;
+  }
 }
 
 .home-date-container {
@@ -94,5 +117,47 @@
 
   @media (min-width: 480px) {
     margin: 3rem 0 0 0;
+  }
+}
+
+.ellia {
+  animation: slideInFadeFromLeft 2.5s ease-out forwards;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+@keyframes slideInFadeFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; 
+  }
+  80% {
+    transform: translateX(10px); 
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+.dylan {
+  animation: slideInFadeFromRight 2.5s ease-out forwards;;
+  transform: translateX(100%); 
+  opacity: 0;
+}
+
+@keyframes slideInFadeFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+    opacity: 1; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; 
   }
 }
