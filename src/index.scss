@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Outfit:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import "./assets/colors.sass";
 
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@
 h1,
 p,
 a {
-  color: #a65759;
+  color: $second-red;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: #f7f3e2;
+  background: $background-colour;
 }
 
 ul {
@@ -55,13 +56,13 @@ code {
     font-family: "Prata", serif;
     font-weight: 600;
     font-size: 2rem;
-    color: #a65759;
-    border-bottom: 0.08rem solid #a65759;
+    color: $main-red;
+    border-bottom: 0.08rem solid $main-red;
     margin: 0 0 2rem 0;
 
     @media screen and (min-width:420px) {
-      font-size: 2.5rem;
-      margin: 0 0 3rem 0;
+      font-size: 2.25rem;
+      margin: 0 0 2.5rem 0;
     }
   }
 
@@ -99,6 +100,7 @@ code {
     &.bold {
       font-weight: 800;
       margin-bottom: 1rem;
+      color: $main-red !important;
     }
   }
 
@@ -115,6 +117,7 @@ code {
     &.bold {
       font-weight: 800;
       margin-bottom: 0;
+      color: $main-red;
     }
 
     &.link {

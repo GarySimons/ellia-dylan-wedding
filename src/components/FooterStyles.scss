@@ -1,3 +1,5 @@
+@import "../assets/colors.sass";
+
 .footer-container {
     display: flex;
     justify-content: center;
@@ -5,7 +7,7 @@
     height: 4rem;
     width: 90vw;
     max-width: 700px;
-    border-top: 0.08rem solid #a65759;
+    border-top: 0.08rem solid $main-red;
     font-size: 0.7rem;
     margin: 1.5rem auto 0 auto;
 }

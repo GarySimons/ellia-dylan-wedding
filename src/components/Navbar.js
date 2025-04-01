@@ -73,9 +73,9 @@ const Navbar = () => {
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {hamburgerClick ? (
-            <FaTimes size={20} style={{ color: "#000000" }} />
+            <FaTimes size={20} style={{ color: "#ffffff" }} />
           ) : (
-            <FaBars size={20} style={{ color: "#000000" }} />
+            <FaBars size={20} style={{ color: "#692a32" }} />
           )}
         </div>
       </div>
