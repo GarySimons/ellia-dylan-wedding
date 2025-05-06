@@ -7,22 +7,25 @@ const EmailForm = () => {
     name: "",
     email: "",
     message: "",
+    attendance: "", // ✅ Added attendance field
   });
 
   const [status, setStatus] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
+    const { name, email, message, attendance } = formData;
+
+    if (!name || !email || !message || !attendance) {
       setStatus("Please fill out all fields.");
       return;
     }
@@ -38,11 +41,11 @@ const EmailForm = () => {
         (result) => {
           console.log(result.text);
           setStatus("Message sent successfully! Thank you");
-
           setFormData({
             name: "",
             email: "",
             message: "",
+            attendance: "",
           });
         },
         (error) => {
@@ -51,9 +54,7 @@ const EmailForm = () => {
         }
       )
       .finally(() => {
-        setTimeout(() => {
-          setStatus("");
-        }, 5000);
+        setTimeout(() => setStatus(""), 5000);
       });
   };
 
@@ -71,6 +72,7 @@ const EmailForm = () => {
             required
           />
         </div>
+
         <div>
           <input
             type="email"
@@ -82,6 +84,34 @@ const EmailForm = () => {
             required
           />
         </div>
+
+        {/* ✅ Attendance radio buttons */}
+        <div>
+          <p>Will you be attending?</p>
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="yes"
+              checked={formData.attendance === "yes"}
+              onChange={handleInputChange}
+              required
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="attendance"
+              value="no"
+              checked={formData.attendance === "no"}
+              onChange={handleInputChange}
+              required
+            />
+            No
+          </label>
+        </div>
+
         <div>
           <textarea
             id="message"
@@ -92,10 +122,12 @@ const EmailForm = () => {
             required
           ></textarea>
         </div>
+
         <div>
           <button type="submit">Send</button>
         </div>
       </form>
+
       {status && <p>{status}</p>}
     </div>
   );
