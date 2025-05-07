@@ -52,12 +52,67 @@
       opacity: 0.7;
     }
   }
+}
 
-  p {
-    text-align: center;
-    font-weight: 500;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #000000;
+.radio-container {
+  // border: 0.1rem solid $main-red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 1rem 0;
+  gap: 1rem;
+
+  .radio-question {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: $main-red;
+  }
+
+  .radio-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .radio-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .radio-input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .radio-text {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .custom-radio {
+      width: 20px;
+      height: 20px;
+      border: 2px solid $main-red;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .radio-input:checked + .custom-radio::after {
+      content: "";
+      position: absolute;
+      top: 3.5px;
+      left: 3.5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $main-red;
+    }
   }
 }

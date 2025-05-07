@@ -61,6 +61,38 @@ const EmailForm = () => {
   return (
     <div className="contact-form">
       <form onSubmit={sendEmail}>
+        <div className="radio-container">
+          <p className="radio-question">Will you be attending?</p>
+          <div className="radio-button-container">
+            <label className="radio-label">
+              <input
+                className="radio-input"
+                type="radio"
+                name="attendance"
+                value="yes"
+                checked={formData.attendance === "yes"}
+                onChange={handleInputChange}
+                required
+              />
+              <span className="custom-radio"></span>
+              <p className="radio-text">Yes</p>
+            </label>
+
+            <label className="radio-label">
+              <input
+                className="radio-input"
+                type="radio"
+                name="attendance"
+                value="no"
+                checked={formData.attendance === "no"}
+                onChange={handleInputChange}
+                required
+              />
+              <span className="custom-radio"></span>
+              <p className="radio-text">No</p>
+            </label>
+          </div>
+        </div>
         <div>
           <input
             type="text"
@@ -83,33 +115,6 @@ const EmailForm = () => {
             onChange={handleInputChange}
             required
           />
-        </div>
-
-        {/* ✅ Attendance radio buttons */}
-        <div>
-          <p>Will you be attending?</p>
-          <label>
-            <input
-              type="radio"
-              name="attendance"
-              value="yes"
-              checked={formData.attendance === "yes"}
-              onChange={handleInputChange}
-              required
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="attendance"
-              value="no"
-              checked={formData.attendance === "no"}
-              onChange={handleInputChange}
-              required
-            />
-            No
-          </label>
         </div>
 
         <div>
