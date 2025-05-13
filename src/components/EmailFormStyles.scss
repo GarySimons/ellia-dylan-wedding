@@ -66,6 +66,14 @@
     font-size: 1.35rem;
     font-weight: 600;
     color: $main-red;
+
+    &.save {
+      font-size: 1.5rem;
+
+      @media (min-width: 480px) {
+        font-size: 1.75rem;
+      }
+    }
   }
 
   .radio-button-container {
