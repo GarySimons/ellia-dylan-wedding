@@ -70,6 +70,16 @@ const Navbar = () => {
               CONTACT
             </Link>
           </li>
+          <li>
+            <Link
+              to="/save-the-date"
+              className={
+                location.pathname === "/save-the-date" ? "active-link" : ""
+              }
+            >
+              SAVE THE DATE
+            </Link>
+          </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {hamburgerClick ? (

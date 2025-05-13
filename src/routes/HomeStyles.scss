@@ -162,3 +162,15 @@
     opacity: 1; 
   }
 }
+
+.save-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  color: $main-red;
+  margin: 0 0 2rem 0;
+
+  @media screen and (min-width:420px) {
+    font-size: 3.5rem;
+    margin: 0 0 2.5rem 0;
+  }
+}

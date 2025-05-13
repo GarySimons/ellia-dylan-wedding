@@ -7,7 +7,7 @@ const EmailForm = () => {
     name: "",
     email: "",
     message: "",
-    attendance: "", // ✅ Added attendance field
+    attendance: "",
   });
 
   const [status, setStatus] = useState("");

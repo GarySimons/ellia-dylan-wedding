@@ -6,6 +6,7 @@ import Details from "./routes/Details";
 import Location from "./routes/Location";
 import Accommodation from "./routes/Accommodation";
 import Contact from "./routes/Contact";
+import SaveDate from "./routes/SaveDate";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/accommodation" element={<Accommodation />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/save-the-date" element={<SaveDate />} />
       </Routes>
     </div>
   );
