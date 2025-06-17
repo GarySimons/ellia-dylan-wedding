@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import EmailForm from "../components/EmailForm";
 import waxSeal from "../assets/wax-seal.png";
 import "./HomeStyles.scss";
-import SaveForm from "../components/SaveForm";
+import ReusableButton from "../components/Shared/ReusableButton";
 
 const SaveDate = () => {
   return (
@@ -26,7 +24,8 @@ const SaveDate = () => {
         </div>
         <img src={waxSeal} alt="Wax Seal" className="wax-image save" />
         <div className="save-container">
-          <SaveForm />
+          <ReusableButton to="/contact">RSVP</ReusableButton>
+          <ReusableButton to="/accommodation">ACCOMMODATION</ReusableButton>
         </div>
       </div>
 

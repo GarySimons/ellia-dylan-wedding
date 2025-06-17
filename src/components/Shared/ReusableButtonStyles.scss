@@ -1,0 +1,21 @@
+@import "../../assets/colors.sass";
+
+.reusable-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-red;
+    color: white;
+    height: 3rem;
+    width: 12rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  
+    &:hover {
+      background-color: #a65759;
+    }
+  }
+  
