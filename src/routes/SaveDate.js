@@ -23,7 +23,7 @@ const SaveDate = () => {
           <p className="home-address">SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX</p>
         </div>
         <div className="save-container">
-          <ReusableButton to="/contact">RSVP</ReusableButton>
+          <ReusableButton to="/rsvp">RSVP</ReusableButton>
           <ReusableButton to="/accommodation">ACCOMMODATION</ReusableButton>
         </div>
         <img src={waxSeal} alt="Wax Seal" className="wax-image save" />

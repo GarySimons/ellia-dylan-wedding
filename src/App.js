@@ -16,7 +16,7 @@ function App() {
         {/* <Route path="/details" element={<Details />} /> */}
         {/* <Route path="/location" element={<Location />} /> */}
         <Route path="/accommodation" element={<Accommodation />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/rsvp" element={<Contact />} />
         {/* <Route path="/save-the-date" element={<SaveDate />} /> */}
         <Route path="/" element={<SaveDate />} />
       </Routes>
