@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import EmailForm from "../components/EmailForm";
+import NavbarSaveDate from "../components/NavbarSaveDate";
 
 const Contact = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarSaveDate />
       <div className="main-container">
-        <h1 className="page-heading">Contact</h1>
+        <h1 className="page-heading">RSVP</h1>
         <EmailForm />
       </div>
       <Footer />

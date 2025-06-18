@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import hotelsData from "../assets/data/hotels.json";
+import NavbarSaveDate from "../components/NavbarSaveDate";
 
 const Accommodation = () => {
   const [hotels, setHotels] = useState([]);
@@ -12,7 +13,7 @@ const Accommodation = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavbarSaveDate />
       <div className="main-container">
         <h1 className="page-heading">Accommodation</h1>
         <div className="hotel-grid">

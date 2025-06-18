@@ -22,11 +22,11 @@ const SaveDate = () => {
           <hr className="home-line" />
           <p className="home-address">SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX</p>
         </div>
-        <img src={waxSeal} alt="Wax Seal" className="wax-image save" />
         <div className="save-container">
           <ReusableButton to="/contact">RSVP</ReusableButton>
           <ReusableButton to="/accommodation">ACCOMMODATION</ReusableButton>
         </div>
+        <img src={waxSeal} alt="Wax Seal" className="wax-image save" />
       </div>
 
       <Footer />
