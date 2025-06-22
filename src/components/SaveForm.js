@@ -45,8 +45,9 @@ const SaveForm = () => {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         e.target,
-        process.env.REACT_APP_EMAILJS_USER_ID
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
+
       .then(
         (result) => {
           console.log(result.text);
@@ -69,7 +70,7 @@ const SaveForm = () => {
         setTimeout(() => setStatus(""), 5000);
       });
   };
-
+  console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
   const isDisabled = formData.attendance === "";
 
   return (
