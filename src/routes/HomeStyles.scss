@@ -99,6 +99,9 @@
     font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 2s;
 
     &.save {
       font-size: 3.5rem;
@@ -198,10 +201,19 @@
   font-size: 2rem;
   color: $main-red;
   margin: -0.5rem 0 1rem 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 2s;
 
   @media screen and (min-width:420px) {
     font-size: 3rem;
     margin: 0 0 2rem 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
@@ -213,6 +225,9 @@
   margin: 1.5rem auto 0rem auto;
   text-align: center;
   gap: 0.75rem;
+  opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 2.75s;
 
   @media screen and (min-width:420px) {
     margin: 3rem auto 0.5rem auto;
@@ -220,3 +235,9 @@
     gap: 2rem;
   }
 }
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
