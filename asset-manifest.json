@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ellia-dylan-wedding/static/css/main.58263cd1.css",
+    "main.js": "/ellia-dylan-wedding/static/js/main.c309fd27.js",
+    "static/media/wax-seal.png": "/ellia-dylan-wedding/static/media/wax-seal.458d98c78920b99cecbd.png",
+    "index.html": "/ellia-dylan-wedding/index.html",
+    "main.58263cd1.css.map": "/ellia-dylan-wedding/static/css/main.58263cd1.css.map",
+    "main.c309fd27.js.map": "/ellia-dylan-wedding/static/js/main.c309fd27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58263cd1.css",
+    "static/js/main.c309fd27.js"
+  ]
+}
