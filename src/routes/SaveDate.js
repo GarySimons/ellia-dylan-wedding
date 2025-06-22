@@ -20,7 +20,7 @@ const SaveDate = () => {
         <div className="home-date-container save">
           <p className="home-date save">23.05.26</p>
           <hr className="home-line" />
-          <p className="home-address">SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX</p>
+          <p className="home-address">ARUNDEL, WEST SUSSEX</p>
         </div>
         <div className="save-container">
           <ReusableButton to="/rsvp">RSVP</ReusableButton>
