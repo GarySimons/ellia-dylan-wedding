@@ -38,8 +38,8 @@ const NavbarSaveDate = () => {
           </li>
           <li>
             <Link
-              to="/contact"
-              className={location.pathname === "/contact" ? "active-link" : ""}
+              to="/rsvp"
+              className={location.pathname === "/rsvp" ? "active-link" : ""}
             >
               RSVP
             </Link>

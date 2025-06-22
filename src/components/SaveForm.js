@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./EmailFormStyles.scss";
 
@@ -6,26 +6,36 @@ const SaveForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    address: "",
     message: "",
     attendance: "",
   });
 
   const [status, setStatus] = useState("");
 
+  useEffect(() => {
+    const savedData = localStorage.getItem("saveFormData");
+    if (savedData) {
+      setFormData(JSON.parse(savedData));
+    }
+  }, []);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
+    const updatedFormData = {
+      ...formData,
       [name]: value,
-    }));
+    };
+    setFormData(updatedFormData);
+    localStorage.setItem("saveFormData", JSON.stringify(updatedFormData));
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const { name, email, message, attendance } = formData;
+    const { name, email, address, message, attendance } = formData;
 
-    if (!name || !email || !message || !attendance) {
+    if (!name || !email || !address || !message || !attendance) {
       setStatus("Please fill out all fields.");
       return;
     }
@@ -44,9 +54,11 @@ const SaveForm = () => {
           setFormData({
             name: "",
             email: "",
+            address: "",
             message: "",
             attendance: "",
           });
+          localStorage.removeItem("saveFormData");
         },
         (error) => {
           console.log(error.text);
@@ -57,6 +69,8 @@ const SaveForm = () => {
         setTimeout(() => setStatus(""), 5000);
       });
   };
+
+  const isDisabled = formData.attendance === "";
 
   return (
     <div className="contact-form">
@@ -95,6 +109,7 @@ const SaveForm = () => {
             </label>
           </div>
         </div>
+
         <div>
           <input
             type="text"
@@ -104,6 +119,7 @@ const SaveForm = () => {
             value={formData.name}
             onChange={handleInputChange}
             required
+            disabled={isDisabled}
           />
         </div>
 
@@ -116,6 +132,20 @@ const SaveForm = () => {
             value={formData.email}
             onChange={handleInputChange}
             required
+            disabled={isDisabled}
+          />
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+            value={formData.address}
+            onChange={handleInputChange}
+            required
+            disabled={isDisabled}
           />
         </div>
 
@@ -127,15 +157,22 @@ const SaveForm = () => {
             value={formData.message}
             onChange={handleInputChange}
             required
+            disabled={isDisabled}
           ></textarea>
         </div>
 
         <div>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={isDisabled}>
+            Send
+          </button>
         </div>
       </form>
 
-      {status && <p>{status}</p>}
+      {status && (
+        <div className="succsess-message">
+          <p>{status}</p>
+        </div>
+      )}
     </div>
   );
 };
