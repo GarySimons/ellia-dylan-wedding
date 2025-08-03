@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import waxSeal from "../assets/wax-seal.png";
+import barnIllo from "../assets/south_stoke_barn.png";
 import "./HomeStyles.scss";
 import ReusableButton from "../components/Shared/ReusableButton";
 
@@ -26,7 +27,11 @@ const SaveDate = () => {
           <ReusableButton to="/rsvp">RSVP</ReusableButton>
           <ReusableButton to="/accommodation">ACCOMMODATION</ReusableButton>
         </div>
-        <img src={waxSeal} alt="Wax Seal" className="wax-image save" />
+        <img
+          src={barnIllo}
+          alt="South Lodge illustration"
+          className="barn-image-save"
+        />
       </div>
 
       <Footer />
