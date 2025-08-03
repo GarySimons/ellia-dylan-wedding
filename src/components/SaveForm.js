@@ -88,7 +88,8 @@ const SaveForm = () => {
           </p>
           <div className="radio-button-container main">
             <p className="radio-question save-question">
-              Will you be attending?
+              <b>Will you be attending?</b> <br />
+              Please click yes or no. Thank you.
             </p>
             <div className="radio-button-container">
               <label className="radio-label">
