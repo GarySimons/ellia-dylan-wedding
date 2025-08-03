@@ -35,7 +35,7 @@ const SaveForm = () => {
 
     const { name, email, address, message, attendance } = formData;
 
-    if (!name || !email || !address || !message || !attendance) {
+    if (!name || !email || !address || !attendance) {
       setStatus("Please fill out all fields.");
       return;
     }
@@ -78,36 +78,47 @@ const SaveForm = () => {
       <form onSubmit={sendEmail}>
         <div className="radio-container">
           <p className="radio-question save">
-            Please let us know if you will be attending?
+            Please let us know if you intend on coming <br />
+            by 31st October.
           </p>
-          <div className="radio-button-container">
-            <label className="radio-label">
-              <input
-                className="radio-input"
-                type="radio"
-                name="attendance"
-                value="yes"
-                checked={formData.attendance === "yes"}
-                onChange={handleInputChange}
-                required
-              />
-              <span className="custom-radio"></span>
-              <p className="radio-text">Yes</p>
-            </label>
+          <p className="radio-question save-small">
+            We will be married in a private ceremony and would love for you to
+            join us after for celebrations. An invitation with full details will
+            be sent to the address you input below.
+          </p>
+          <div className="radio-button-container main">
+            <p className="radio-question save-question">
+              Will you be attending?
+            </p>
+            <div className="radio-button-container">
+              <label className="radio-label">
+                <input
+                  className="radio-input"
+                  type="radio"
+                  name="attendance"
+                  value="yes"
+                  checked={formData.attendance === "yes"}
+                  onChange={handleInputChange}
+                  required
+                />
+                <span className="custom-radio"></span>
+                <p className="radio-text">Yes</p>
+              </label>
 
-            <label className="radio-label">
-              <input
-                className="radio-input"
-                type="radio"
-                name="attendance"
-                value="no"
-                checked={formData.attendance === "no"}
-                onChange={handleInputChange}
-                required
-              />
-              <span className="custom-radio"></span>
-              <p className="radio-text">No</p>
-            </label>
+              <label className="radio-label">
+                <input
+                  className="radio-input"
+                  type="radio"
+                  name="attendance"
+                  value="no"
+                  checked={formData.attendance === "no"}
+                  onChange={handleInputChange}
+                  required
+                />
+                <span className="custom-radio"></span>
+                <p className="radio-text">No</p>
+              </label>
+            </div>
           </div>
         </div>
 
@@ -116,7 +127,7 @@ const SaveForm = () => {
             type="text"
             id="name"
             name="name"
-            placeholder="Name"
+            placeholder="Name(s) of guest(s)"
             value={formData.name}
             onChange={handleInputChange}
             required
@@ -142,7 +153,7 @@ const SaveForm = () => {
             type="text"
             id="address"
             name="address"
-            placeholder="Address"
+            placeholder="Address - so we can send the invites!"
             value={formData.address}
             onChange={handleInputChange}
             required
@@ -157,7 +168,6 @@ const SaveForm = () => {
             placeholder="Please send us a message"
             value={formData.message}
             onChange={handleInputChange}
-            required
             disabled={isDisabled}
           ></textarea>
         </div>

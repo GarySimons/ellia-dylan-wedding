@@ -16,6 +16,7 @@ const Accommodation = () => {
       <NavbarSaveDate />
       <div className="main-container">
         <h1 className="page-heading">Accommodation</h1>
+        <p className="page-subtext">Examples of local hotels</p>
         <div className="hotel-grid">
           {hotels.map((hotel, index) => (
             <div key={index} className="hotel-card">

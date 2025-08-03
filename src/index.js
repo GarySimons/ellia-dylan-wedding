@@ -9,7 +9,7 @@ root.render(
   // <BrowserRouter basename="/ellia-dylan-wedding">
   //   <App />
   // </BrowserRouter>
-  <Router>
-    <App />
-  </Router>
+  // <Router>
+  <App />
+  // </Router>
 );
