@@ -78,7 +78,8 @@ const SaveForm = () => {
       <form onSubmit={sendEmail}>
         <div className="radio-container">
           <p className="radio-question save">
-            Please let us know if you intend on coming <br />
+            Please let us know if you intend on coming{" "}
+            <br className="hide-on-mobile" />
             by 31st October.
           </p>
           <p className="radio-question save-small">
@@ -181,7 +182,7 @@ const SaveForm = () => {
       </form>
 
       {status && (
-        <div className="succsess-message">
+        <div className="success-message">
           <p>{status}</p>
         </div>
       )}
