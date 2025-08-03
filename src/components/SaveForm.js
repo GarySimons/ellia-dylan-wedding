@@ -67,7 +67,7 @@ const SaveForm = () => {
         }
       )
       .finally(() => {
-        setTimeout(() => setStatus(""), 5000);
+        setTimeout(() => setStatus(""), 4000);
       });
   };
   console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);

@@ -12,6 +12,8 @@ const PASSWORD = process.env.REACT_APP_SITE_PASSWORD;
 function PasswordPage() {
   const [input, setInput] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [incorrectPasswordMessage, setIncorrectPasswordMessage] =
+    useState(false);
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -21,7 +23,8 @@ function PasswordPage() {
       login();
       navigate("/home");
     } else {
-      alert("Incorrect password");
+      setIncorrectPasswordMessage(true);
+      setTimeout(() => setIncorrectPasswordMessage(""), 3000);
     }
   };
 
@@ -77,6 +80,12 @@ function PasswordPage() {
             className="barn-image-password"
           />
         </div>
+
+        {incorrectPasswordMessage && (
+          <div className="success-message">
+            <p>Incorrect password</p>
+          </div>
+        )}
       </div>
       <Footer />
     </div>
