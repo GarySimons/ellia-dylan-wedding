@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.eb68416d.css",
-    "main.js": "/static/js/main.13be16fa.js",
+    "main.js": "/static/js/main.571ab6d0.js",
     "static/media/south_stoke_barn.png": "/static/media/south_stoke_barn.232af77afdb4bee97640.png",
     "static/media/wax-seal.png": "/static/media/wax-seal.458d98c78920b99cecbd.png",
     "index.html": "/index.html",
     "main.eb68416d.css.map": "/static/css/main.eb68416d.css.map",
-    "main.13be16fa.js.map": "/static/js/main.13be16fa.js.map"
+    "main.571ab6d0.js.map": "/static/js/main.571ab6d0.js.map"
   },
   "entrypoints": [
     "static/css/main.eb68416d.css",
-    "static/js/main.13be16fa.js"
+    "static/js/main.571ab6d0.js"
   ]
 }
