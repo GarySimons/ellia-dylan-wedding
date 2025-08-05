@@ -56,7 +56,7 @@ function PasswordPage() {
                     sx={{
                       height: "1.3rem",
                       marginTop: "0.2rem",
-                      color: "#692a32",
+                      color: "#b5100d",
                     }}
                   />
                 ) : (
@@ -64,7 +64,7 @@ function PasswordPage() {
                     sx={{
                       height: "1.3rem",
                       marginTop: "0.2rem",
-                      color: "#692a32",
+                      color: "#b5100d",
                     }}
                   />
                 )}

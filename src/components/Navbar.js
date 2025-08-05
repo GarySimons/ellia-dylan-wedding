@@ -85,7 +85,7 @@ const Navbar = () => {
           {hamburgerClick ? (
             <FaTimes size={20} style={{ color: "#ffffff" }} />
           ) : (
-            <FaBars size={20} style={{ color: "#692a32" }} />
+            <FaBars size={20} style={{ color: "#b5100d" }} />
           )}
         </div>
       </div>
