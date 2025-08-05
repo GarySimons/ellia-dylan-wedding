@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ellia-dylan-wedding/static/css/main.03f6f5d5.css",
-    "main.js": "/ellia-dylan-wedding/static/js/main.270929bb.js",
+    "main.css": "/ellia-dylan-wedding/static/css/main.eb68416d.css",
+    "main.js": "/ellia-dylan-wedding/static/js/main.afe6788a.js",
     "static/media/south_stoke_barn.png": "/ellia-dylan-wedding/static/media/south_stoke_barn.232af77afdb4bee97640.png",
     "static/media/wax-seal.png": "/ellia-dylan-wedding/static/media/wax-seal.458d98c78920b99cecbd.png",
     "index.html": "/ellia-dylan-wedding/index.html",
-    "main.03f6f5d5.css.map": "/ellia-dylan-wedding/static/css/main.03f6f5d5.css.map",
-    "main.270929bb.js.map": "/ellia-dylan-wedding/static/js/main.270929bb.js.map"
+    "main.eb68416d.css.map": "/ellia-dylan-wedding/static/css/main.eb68416d.css.map",
+    "main.afe6788a.js.map": "/ellia-dylan-wedding/static/js/main.afe6788a.js.map"
   },
   "entrypoints": [
-    "static/css/main.03f6f5d5.css",
-    "static/js/main.270929bb.js"
+    "static/css/main.eb68416d.css",
+    "static/js/main.afe6788a.js"
   ]
 }
