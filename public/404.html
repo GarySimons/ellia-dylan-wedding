@@ -3,9 +3,12 @@
 
 <head>
     <script>
-        const redirectTo = '/' + window.location.pathname + window.location.search + window.location.hash;
-        sessionStorage.redirect = redirectTo;
-        window.location.href = '/';
+        // Save the current path and reload at "/"
+        sessionStorage.setItem(
+            "redirect",
+            window.location.pathname + window.location.search + window.location.hash
+        );
+        window.location.href = "/";
     </script>
 </head>
 
