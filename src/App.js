@@ -18,6 +18,12 @@ import { AuthContext } from "./context/AuthContext";
 import PasswordPage from "./routes/PasswordPage";
 
 function App() {
+  if (sessionStorage.redirect) {
+    const redirectPath = sessionStorage.redirect;
+    sessionStorage.removeItem("redirect");
+    window.history.replaceState(null, "", redirectPath);
+  }
+
   const [isAuthenticated, setIsAuthenticated] = useState(
     localStorage.getItem("authenticated") === "true"
   );
