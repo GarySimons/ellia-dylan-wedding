@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 
 import {
@@ -6,7 +6,9 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
+
 import Home from "./routes/Home";
 import Details from "./routes/Details";
 import Location from "./routes/Location";
@@ -17,13 +19,26 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import { AuthContext } from "./context/AuthContext";
 import PasswordPage from "./routes/PasswordPage";
 
-function App() {
-  if (sessionStorage.redirect) {
+function RedirectIfNeeded() {
+  const location = useLocation();
+  const hasRedirected = useRef(false);
+
+  if (
+    !hasRedirected.current &&
+    location.pathname === "/" &&
+    sessionStorage.redirect &&
+    sessionStorage.redirect !== "/"
+  ) {
     const redirectPath = sessionStorage.redirect;
     sessionStorage.removeItem("redirect");
-    window.history.replaceState(null, "", redirectPath);
+    hasRedirected.current = true;
+    return <Navigate to={redirectPath} replace />;
   }
 
+  return null;
+}
+
+function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
     localStorage.getItem("authenticated") === "true"
   );
@@ -42,6 +57,7 @@ function App() {
     <div>
       <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
         <Router>
+          <RedirectIfNeeded />
           <Routes>
             <Route path="/" element={<PasswordPage />} />
             <Route
