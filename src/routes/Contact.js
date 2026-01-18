@@ -8,7 +8,7 @@ import SaveForm from "../components/SaveForm";
 const Contact = () => {
   return (
     <div>
-      <NavbarSaveDate />
+      <Navbar />
       <div className="main-container">
         <h1 className="page-heading">RSVP</h1>
         <SaveForm />

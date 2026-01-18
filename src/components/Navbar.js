@@ -64,13 +64,13 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/contact"
-              className={location.pathname === "/contact" ? "active-link" : ""}
+              to="/rsvp"
+              className={location.pathname === "/rsvp" ? "active-link" : ""}
             >
-              CONTACT
+              RSVP
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/save-the-date"
               className={
@@ -79,7 +79,7 @@ const Navbar = () => {
             >
               SAVE THE DATE
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {hamburgerClick ? (

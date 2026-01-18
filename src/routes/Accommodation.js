@@ -13,7 +13,7 @@ const Accommodation = () => {
 
   return (
     <div>
-      <NavbarSaveDate />
+      <Navbar />
       <div className="main-container">
         <h1 className="page-heading">Accommodation</h1>
         <p className="page-subtext">Examples of local hotels</p>

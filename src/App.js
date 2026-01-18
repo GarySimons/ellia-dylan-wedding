@@ -62,36 +62,39 @@ function App() {
         <Router>
           <RedirectHandler />
           <Routes>
-            <Route path="/" element={<PasswordPage />} />
+            {/* <Route path="/" element={<PasswordPage />} /> */}
             <Route
               path="/accommodation"
               element={
-                <ProtectedRoute>
-                  <Accommodation />
-                </ProtectedRoute>
+                // <ProtectedRoute>
+                //   <Accommodation />
+                // </ProtectedRoute>
+                <Accommodation />
               }
             />
             <Route
               path="/rsvp"
               element={
-                <ProtectedRoute>
-                  <Contact />
-                </ProtectedRoute>
+                // <ProtectedRoute>
+                //   <Contact />
+                // </ProtectedRoute>
+                <Contact />
               }
             />
             <Route
               path="/home"
               element={
-                <ProtectedRoute>
-                  <SaveDate />
-                </ProtectedRoute>
+                // <ProtectedRoute>
+                //   <SaveDate />
+                // </ProtectedRoute>
+                <Home />
               }
             />
             <Route path="*" element={<Navigate to="/" />} />
-            {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/details" element={<Details />} /> */}
-            {/* <Route path="/location" element={<Location />} /> */}
-            {/* <Route path="/save-the-date" element={<SaveDate />} /> */}
+            <Route path="/" element={<Home />} />
+            <Route path="/details" element={<Details />} />
+            <Route path="/location" element={<Location />} />
+            <Route path="/save-the-date" element={<SaveDate />} />
           </Routes>
         </Router>
       </AuthContext.Provider>

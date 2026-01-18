@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import waxSeal from "../assets/wax-seal.png";
+import barnIllo from "../assets/south_stoke_barn.png";
+
 import "./HomeStyles.scss";
 
 const Home = () => {
@@ -22,7 +24,11 @@ const Home = () => {
           <hr className="home-line" />
           <p className="home-address">SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX</p>
         </div>
-        <img src={waxSeal} alt="Wax Seal" className="wax-image" />
+        <img
+          src={barnIllo}
+          alt="South Lodge illustration"
+          className="barn-image-save"
+        />
       </div>
 
       <Footer />
