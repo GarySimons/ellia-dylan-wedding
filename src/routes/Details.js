@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import barnIllo from "../assets/images/south_stoke_barn.png";
+import dressIllo from "../assets/images/red-dress.png";
+import kiltIllo from "../assets/images/kilt.png";
 import { Link } from "react-router-dom";
 
 const Details = () => {
@@ -16,6 +19,11 @@ const Details = () => {
           </p>
           <p className="page-text bold">Date</p>
           <p className="page-text">Sat 23 May 2026</p>
+          <img
+            src={barnIllo}
+            alt="South Lodge illustration"
+            className="barn-image-details"
+          />
           <p className="page-text bold">Location</p>
           <p className="page-text">
             South Stoke Barn,
@@ -34,8 +42,19 @@ const Details = () => {
           <p className="page-text link">
             <Link to="/location">Directions</Link>
           </p>
+          <div className="div-flex">
+            <img
+              src={dressIllo}
+              alt="red dress illustration"
+              className="red-dress"
+            />
+            <img src={kiltIllo} alt="Kilt illustration" className="kilt" />
+          </div>
           <p className="page-text bold">Dress Code</p>
-          <p className="page-text">Smart Casual</p>
+          <p className="page-text">
+            Smart Casual
+            <br /> (Kilts welcome)
+          </p>
           <p className="page-text bold">Accommodation</p>
           <p className="page-text">Here are a few local options</p>
           <p className="page-text link">

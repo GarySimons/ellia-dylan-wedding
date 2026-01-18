@@ -21,7 +21,7 @@
   z-index: 1;
   width: 100%;
   max-width: 700px;
-  margin-bottom: 1rem;
+  margin: 2rem auto 1rem auto;
 
   @media (min-width: 480px) {
     justify-content: flex-start;
@@ -159,11 +159,22 @@
   margin: 0;
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
 
   @media (min-width: 480px) {
     height: 11rem;
-    margin: 0.75rem 0 1rem 0;
+    margin: 2rem 0 0.25rem 0;
+  }
+}
+
+.barn-image-details {
+  height: 4rem;
+  width: auto;
+  margin: 0;
+
+  @media (min-width: 480px) {
+    height: 6rem;
+    margin: 0 0 0.25rem 0;
   }
 }
 
