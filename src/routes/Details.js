@@ -46,9 +46,9 @@ const Details = () => {
             <img
               src={dressIllo}
               alt="red dress illustration"
-              className="red-dress"
+              className="red-dress-illo"
             />
-            <img src={kiltIllo} alt="Kilt illustration" className="kilt" />
+            <img src={kiltIllo} alt="Kilt illustration" className="kilt-illo" />
           </div>
           <p className="page-text bold">Dress Code</p>
           <p className="page-text">
