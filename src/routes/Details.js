@@ -15,10 +15,16 @@ const Details = () => {
             Ellia Coldwell-Simons & Dylan Scalet
           </p>
           <p className="page-text bold">Date</p>
-          <p className="page-text">Sat 25 May 2026</p>
+          <p className="page-text">Sat 23 May 2026</p>
           <p className="page-text bold">Location</p>
           <p className="page-text">
-            South Stoke Barn, Arundel, West Sussex BN18 9PF
+            South Stoke Barn,
+            <br />
+            Arundel,
+            <br />
+            West Sussex
+            <br />
+            BN18 9PF
           </p>
           <p className="page-text link">
             <a href="https://www.southstokebarn.co.uk/" target="_blank">
@@ -28,8 +34,6 @@ const Details = () => {
           <p className="page-text link">
             <Link to="/location">Directions</Link>
           </p>
-          <p className="page-text bold">Time</p>
-          <p className="page-text">13.00</p>
           <p className="page-text bold">Dress Code</p>
           <p className="page-text">Smart Casual</p>
           <p className="page-text bold">Accommodation</p>
@@ -37,10 +41,6 @@ const Details = () => {
           <p className="page-text link">
             <Link to="/accommodation">Places to stay</Link>
           </p>
-          <p className="page-text bold">Evening event</p>
-          <p className="page-text">19:00</p>
-          <p className="page-text bold">Carriages</p>
-          <p className="page-text">23:30</p>
         </div>
       </div>
       <Footer />

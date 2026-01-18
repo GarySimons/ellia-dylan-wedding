@@ -23,6 +23,7 @@ import SaveDate from "./routes/SaveDate";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import { AuthContext } from "./context/AuthContext";
 import PasswordPage from "./routes/PasswordPage";
+import Order from "./routes/Order";
 
 // 🔁 Handles restoring the redirect path just once
 function RedirectHandler() {
@@ -63,6 +64,21 @@ function App() {
           <RedirectHandler />
           <Routes>
             {/* <Route path="/" element={<PasswordPage />} /> */}
+
+            <Route path="*" element={<Navigate to="/" />} />
+            <Route
+              path="/home"
+              element={
+                // <ProtectedRoute>
+                //   <SaveDate />
+                // </ProtectedRoute>
+                <Home />
+              }
+            />
+            <Route path="/" element={<Home />} />
+            <Route path="/details" element={<Details />} />
+            <Route path="/order-of-service" element={<Order />} />
+            <Route path="/location" element={<Location />} />
             <Route
               path="/accommodation"
               element={
@@ -81,19 +97,6 @@ function App() {
                 <Contact />
               }
             />
-            <Route
-              path="/home"
-              element={
-                // <ProtectedRoute>
-                //   <SaveDate />
-                // </ProtectedRoute>
-                <Home />
-              }
-            />
-            <Route path="*" element={<Navigate to="/" />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/details" element={<Details />} />
-            <Route path="/location" element={<Location />} />
             <Route path="/save-the-date" element={<SaveDate />} />
           </Routes>
         </Router>

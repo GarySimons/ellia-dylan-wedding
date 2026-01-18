@@ -2,8 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import Footer from "../components/Footer";
-import waxSeal from "../assets/wax-seal.png";
-import barnIllo from "../assets/south_stoke_barn.png";
+import barnIllo from "../assets/images/south_stoke_barn.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 

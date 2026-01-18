@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import waxSeal from "../assets/wax-seal.png";
-import barnIllo from "../assets/south_stoke_barn.png";
+import barnIllo from "../assets/images/south_stoke_barn.png";
 import "./HomeStyles.scss";
 import ReusableButton from "../components/Shared/ReusableButton";
 

@@ -61,7 +61,7 @@ code {
   .page-heading {
     font-family: "Prata", serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: $main-red;
     border-bottom: 0.08rem solid $main-red;
     margin: 0 0 2rem 0;
@@ -75,7 +75,7 @@ code {
     }
 
     @media screen and (min-width:420px) {
-      font-size: 2.25rem;
+      font-size: 2rem;
       margin: 0 0 2.5rem 0;
     }
   }
