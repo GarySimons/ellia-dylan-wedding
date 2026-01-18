@@ -16,7 +16,7 @@ const Order = () => {
     <div>
       <Navbar />
       <div className="main-container">
-        <h1 className="page-heading">Order of Service</h1>
+        <h1 className="page-heading">Order of Celebrations</h1>
         <div className="page-content-container">
           <img
             src={ringsIllo}
@@ -73,7 +73,7 @@ const Order = () => {
           alt="Glitterball illustration"
           className="glitterball-illo"
         />
-        <p className="page-text bold">6pmpm</p>
+        <p className="page-text bold">6pm</p>
         <p className="page-text">Drinks & Dancing</p>
 
         <img src={taxiIllo} alt="Taxi illustration" className="taxi-illo" />

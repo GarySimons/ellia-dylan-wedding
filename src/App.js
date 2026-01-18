@@ -77,7 +77,7 @@ function App() {
             />
             <Route path="/" element={<Home />} />
             <Route path="/details" element={<Details />} />
-            <Route path="/order-of-service" element={<Order />} />
+            <Route path="/order-of-celebrations" element={<Order />} />
             <Route path="/location" element={<Location />} />
             <Route
               path="/accommodation"
