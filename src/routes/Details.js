@@ -26,12 +26,8 @@ const Details = () => {
           />
           <p className="page-text bold">Location</p>
           <p className="page-text">
-            South Stoke Barn,
-            <br />
-            Arundel,
-            <br />
-            West Sussex
-            <br />
+            South Stoke Barn, <br />
+            Arundel, West Sussex, <br />
             BN18 9PF
           </p>
           <p className="page-text link">

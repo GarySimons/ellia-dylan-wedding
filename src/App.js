@@ -24,6 +24,7 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import { AuthContext } from "./context/AuthContext";
 import PasswordPage from "./routes/PasswordPage";
 import Order from "./routes/Order";
+import Menu from "./routes/Menu";
 
 // 🔁 Handles restoring the redirect path just once
 function RedirectHandler() {
@@ -44,7 +45,7 @@ function RedirectHandler() {
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
-    localStorage.getItem("authenticated") === "true"
+    localStorage.getItem("authenticated") === "true",
   );
 
   const login = () => {
@@ -79,6 +80,7 @@ function App() {
             <Route path="/details" element={<Details />} />
             <Route path="/order-of-celebrations" element={<Order />} />
             <Route path="/location" element={<Location />} />
+            <Route path="/menu" element={<Menu />} />
             <Route
               path="/accommodation"
               element={

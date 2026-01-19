@@ -49,9 +49,10 @@ const Navbar = () => {
               to="/order-of-celebrations"
               className={location.pathname === "/location" ? "active-link" : ""}
             >
-              ORDER OF CELEBRATIONS
+              TIMINGS
             </Link>
           </li>
+
           <li>
             <Link
               to="/location"
@@ -60,6 +61,16 @@ const Navbar = () => {
               LOCATION
             </Link>
           </li>
+
+          <li>
+            <Link
+              to="/menu"
+              className={location.pathname === "/menu" ? "active-link" : ""}
+            >
+              MENU
+            </Link>
+          </li>
+
           <li>
             <Link
               to="/accommodation"
