@@ -335,7 +335,7 @@ code {
 .div-flex-menu {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 3rem;
   margin-top: 2.5rem;
   align-items: center;
   justify-content: center;
@@ -353,7 +353,7 @@ code {
   @media (min-width: 480px) {
     flex-direction: row;
     align-items: flex-start;
-    gap: 4.75rem;
+    gap: 3.5rem;
   }
 }
 
