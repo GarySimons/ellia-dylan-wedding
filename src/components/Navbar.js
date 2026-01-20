@@ -70,6 +70,14 @@ const Navbar = () => {
               MENU
             </Link>
           </li>
+          <li>
+            <Link
+              to="/rsvp"
+              className={location.pathname === "/rsvp" ? "active-link" : ""}
+            >
+              RSVP
+            </Link>
+          </li>
 
           <li>
             <Link
@@ -81,24 +89,6 @@ const Navbar = () => {
               ACCOMMODATION
             </Link>
           </li>
-          <li>
-            <Link
-              to="/rsvp"
-              className={location.pathname === "/rsvp" ? "active-link" : ""}
-            >
-              RSVP
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              to="/save-the-date"
-              className={
-                location.pathname === "/save-the-date" ? "active-link" : ""
-              }
-            >
-              SAVE THE DATE
-            </Link>
-          </li> */}
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {hamburgerClick ? (

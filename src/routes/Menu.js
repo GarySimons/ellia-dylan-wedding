@@ -9,7 +9,7 @@ const Menu = () => {
       <Navbar />
       <div className="main-container">
         <h1 className="page-heading">Menu</h1>
-        <p className="page-subtext">
+        <p className="page-subtext bottom-margin">
           Please choose from the menu and let us know your choices via the{" "}
           <span className="text-link">
             <Link to="/rsvp">RSVP</Link>
@@ -18,38 +18,56 @@ const Menu = () => {
         </p>
         <div className="div-flex-menu">
           <div>
-            <p className="page-text bold">menu subhead</p>
-            <p className="page-text">menu text</p>
+            <p className="page-text bold overline">Canapes</p>
+            <p className="page-text no-margin">A selection of:</p>
+            <p className="page-text no-margin">Mini Yorkshire Puddings (v)</p>
+            <p className="page-text no-margin">Pesto Mousse Crostini (v) </p>
+            <p className="page-text no-margin">Onion Bhajis (vg)</p>
+            <p className="page-text no-margin">Fruit Skewer (vg)</p>
+            <p className="page-text">Mini Sausages and Chicken Skewers</p>
           </div>
 
           <div className="div-flex-mob-menu">
-            <div>
-              <p className="page-text bold">menu subhead</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
+            <div className="div-flex-one">
+              <p className="page-text bold overline">Starter</p>
+              <p className="page-text">Melon and parma ham with rocket salad</p>
+              <p className="page-text menu-overline">
+                Tempura prawns with sweet chilli sauce and rocket
+              </p>
+              <p className="page-text menu-overline">
+                Creamy garlic mushrooms on parsley buttered ciabatta (v/vg)
+              </p>
             </div>
 
-            <div>
-              <p className="page-text bold">menu subhead</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
+            <div className="div-flex-one">
+              <p className="page-text bold overline">Main</p>
+              <p className="page-text">
+                Roast Chicken with Roast Potatoes, Veg and Yorkshire Pudding
+              </p>
+              <p className="page-text menu-overline">
+                Seared Salmon with Garlic New Potatoes and Asparagus in a Dill
+                Sauce
+              </p>
+              <p className="page-text menu-overline">
+                Baked Butternut Squash with Couscous, Feta and Tenderstem
+                Broccoli (v/vg)
+              </p>
             </div>
 
-            <div>
-              <p className="page-text bold">menu subhead</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
-              <p className="page-text">menu text</p>
+            <div className="div-flex-one">
+              <p className="page-text bold overline">Dessert</p>
+              <p className="page-text">Sticky Toffee Pudding</p>
+              <p className="page-text menu-overline">
+                Lemon Tart with Fruit Compote
+              </p>
+              <p className="page-text menu-overline">Chocolate Torte (vg)</p>
             </div>
           </div>
           <div>
-            <p className="page-text bold">menu subhead</p>
-            <p className="page-text">menu text</p>
+            <p className="page-text bold overline">Evening Food</p>
+            <p className="page-text">
+              American Style Hotdogs with Potato Wedges
+            </p>
           </div>
         </div>
       </div>

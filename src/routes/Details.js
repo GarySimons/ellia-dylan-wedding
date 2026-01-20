@@ -18,7 +18,7 @@ const Details = () => {
             Ellia Coldwell-Simons & Dylan Scalet
           </p>
           <p className="page-text bold">Date</p>
-          <p className="page-text">Sat 23 May 2026</p>
+          <p className="page-text">Saturday 23 May 2026</p>
           <img
             src={barnIllo}
             alt="South Lodge illustration"
