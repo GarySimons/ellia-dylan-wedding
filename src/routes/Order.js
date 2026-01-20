@@ -44,7 +44,7 @@ const Order = () => {
         />
         <p className="page-text bold">2pm</p>
         <p className="page-text">Confetti Walk</p>
-        <div className="div-flex">
+        <div className="div-flex-row">
           <img
             src={cocktailIllo}
             alt="Cocktail illustration"

@@ -38,7 +38,7 @@ const Details = () => {
           <p className="page-text link">
             <Link to="/location">Directions</Link>
           </p>
-          <div className="div-flex">
+          <div className="div-flex-row">
             <img
               src={dressIllo}
               alt="red dress illustration"
