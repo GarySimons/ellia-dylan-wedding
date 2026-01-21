@@ -12,8 +12,6 @@ const Contact = () => {
       <Navbar />
       <div className="main-container">
         <h1 className="page-heading">RSVP</h1>
-        {/* <SaveForm />
-        <EmailForm /> */}
         <RsvpForm />
       </div>
       <Footer />

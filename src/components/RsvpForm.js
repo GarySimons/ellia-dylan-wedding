@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import eatingIllo from "../assets/images/eating.png";
 import "./EmailFormStyles.scss";
 
 const RsvpForm = () => {
@@ -227,6 +228,14 @@ const RsvpForm = () => {
           </select>
         </div>
 
+        <div className="div-flex ">
+          <img
+            src={eatingIllo}
+            alt="Plate illustration"
+            className="eating-illo-form"
+          />
+        </div>
+
         <div>
           <input
             type="text"
@@ -286,6 +295,14 @@ const RsvpForm = () => {
               </option>
             ))}
           </select>
+        </div>
+
+        <div className="div-flex ">
+          <img
+            src={eatingIllo}
+            alt="Plate illustration"
+            className="eating-illo-form"
+          />
         </div>
 
         <div>

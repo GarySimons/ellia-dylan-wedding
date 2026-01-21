@@ -4,6 +4,8 @@
   width: 90vw;
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
   form {
     display: flex;
@@ -183,6 +185,12 @@
     color: #7d7c7b;
     font-size: 1rem;
   }
+}
+
+.eating-illo-form {
+  height: auto;
+  width: 4.5rem;
+  margin: 0.25rem 0 0.15rem 0;
 }
 
 // select styling
