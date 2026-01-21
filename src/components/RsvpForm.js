@@ -22,9 +22,24 @@ const RsvpForm = () => {
     message: "",
   });
 
-  const starters = ["Soup", "Bruschetta", "Prawn Cocktail"];
-  const mains = ["Beef", "Chicken", "Vegetarian"];
-  const desserts = ["Cheesecake", "Chocolate Brownie", "Fruit Salad"];
+  const starters = [
+    "Melon and parma ham with rocket salad",
+    "Tempura prawns with sweet chilli sauce and rocket",
+    "Creamy garlic mushrooms on parsley buttered ciabatta (v/vg)",
+    "No Starter",
+  ];
+  const mains = [
+    "Roast Chicken with Roast Potatoes, Veg and Yorkshire Pudding",
+    "Seared Salmon with Garlic New Potatoes and Asparagus in a Dill Sauce",
+    "Baked Butternut Squash with Couscous, Feta and Tenderstem Broccoli (v/vg)",
+    "No Main",
+  ];
+  const desserts = [
+    "Sticky Toffee Pudding",
+    "Lemon Tart with Fruit Compote",
+    "Chocolate Torte (vg)",
+    "No Dessert",
+  ];
 
   const [status, setStatus] = useState("");
 
@@ -177,7 +192,7 @@ const RsvpForm = () => {
           />
         </div>
         <p className="radio-question save-question">
-          Guest One please choose your meal below.
+          Guest One please choose your meal from the selections below.
         </p>
 
         <div className="select-wrapper">
@@ -247,7 +262,7 @@ const RsvpForm = () => {
           />
         </div>
         <p className="radio-question save-question margin-top-radio">
-          Guest Two please choose your meal below.
+          Guest Two please choose your meal from the selections below.
         </p>
         <div className="select-wrapper">
           <select
