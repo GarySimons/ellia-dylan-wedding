@@ -125,10 +125,14 @@ const RsvpForm = () => {
     <div className="contact-form">
       <form onSubmit={sendEmail}>
         <div className="radio-container">
-          <p className="radio-question save">
+          {/* <p className="page-subtext">
             Please let us know if you intend on coming, and choose your food
             from the selections below <br className="hide-on-mobile" />
             by 28th February.
+          </p> */}
+          <p className="page-subtext">
+            Please let us know if you intend on coming, and choose your food
+            from the selections below by 28th February.
           </p>
 
           <div className="radio-button-container main">

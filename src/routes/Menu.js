@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import redFlowerOne from "../assets/images/red-flower-1.png";
+import redFlowerTwo from "../assets/images/red-flower-2.png";
 
 const Menu = () => {
   return (
@@ -26,6 +28,12 @@ const Menu = () => {
             <p className="page-text no-margin">Fruit Skewer (vg)</p>
             <p className="page-text">Mini Sausages and Chicken Skewers</p>
           </div>
+
+          <img
+            src={redFlowerOne}
+            alt="Red flower"
+            className="flower-one-illo"
+          />
 
           <div className="div-flex-mob-menu">
             <div className="div-flex-one">
@@ -63,6 +71,11 @@ const Menu = () => {
               <p className="page-text menu-overline">Chocolate Torte (vg)</p>
             </div>
           </div>
+          <img
+            src={redFlowerTwo}
+            alt="Red flower"
+            className="flower-two-illo"
+          />
           <div>
             <p className="page-text bold overline">Evening Food</p>
             <p className="page-text">

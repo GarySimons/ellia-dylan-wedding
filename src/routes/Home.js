@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import barnIllo from "../assets/images/south_stoke_barn.png";
+import redFlowerThree from "../assets/images/red-flower-3.png";
 
 import "./HomeStyles.scss";
 
@@ -10,6 +11,11 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="home-main-container">
+        <img
+          src={redFlowerThree}
+          alt="Red flower"
+          className="flower-three-illo"
+        />
         <div className="ranged-left-container">
           <p className="wedding">THE WEDDING OF</p>
         </div>
