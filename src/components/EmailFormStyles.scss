@@ -16,7 +16,7 @@
 
   input {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     border: 0.1rem solid $main-red;
     background: none;
     color: #000000;
@@ -66,8 +66,8 @@
   gap: 1rem;
 
   .radio-question {
-    font-size: 1.35rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
     color: $main-red;
 
     &.save {
@@ -78,6 +78,9 @@
       }
     }
 
+    &.margin-top {
+      margin-top: 2rem;
+    }
     &.save-small {
       font-size: 1rem;
       margin-bottom: 1rem;
@@ -88,16 +91,14 @@
     }
 
     &.save-question {
-      font-size: 1rem;
+      font-size: 1.35rem;
       font-weight: 400;
       color: $second-red;
 
-          &.margin-top-radio {
-      margin-top: 2rem;
+      &.margin-top-radio {
+        margin-top: 2rem;
+      }
     }
-    }
-
-
   }
 
   .radio-button-container {
@@ -176,6 +177,12 @@
   }
 }
 
+  .guest-choose {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $second-red;
+  }
+
 #message {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1rem;
@@ -190,7 +197,11 @@
 .eating-illo-form {
   height: auto;
   width: 4.5rem;
-  margin: 0.25rem 0 0.15rem 0;
+  margin: 0.25rem 0 -1rem 0;
+
+  &.bottom-margin {
+    margin: 0.25rem 0 0.25rem 0;
+  }
 }
 
 // select styling
@@ -200,11 +211,11 @@ select {
   padding: 12px 14px;
   height: 48px;
 
-  background-color: #fff;
+  background-color: $background-colour;
   color: #333;
   font-size: 16px;
 
-  border: 1px solid #ccc;
+  border: 0.08rem solid $main-red;
   border-radius: 8px;
 
   outline: none;
@@ -215,7 +226,9 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  transition: border 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 select:focus {
@@ -239,7 +252,6 @@ select:focus {
   color: #666;
 }
 
-
 select:disabled {
   background-color: #f5f5f5;
   color: #999;
@@ -258,5 +270,3 @@ select {
   font-family: inherit;
   border-radius: 8px;
 }
-
-

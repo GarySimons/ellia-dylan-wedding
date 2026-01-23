@@ -125,18 +125,13 @@ const RsvpForm = () => {
     <div className="contact-form">
       <form onSubmit={sendEmail}>
         <div className="radio-container">
-          {/* <p className="page-subtext">
-            Please let us know if you intend on coming, and choose your food
-            from the selections below <br className="hide-on-mobile" />
-            by 28th February.
-          </p> */}
           <p className="page-subtext">
             Please let us know if you intend on coming, and choose your food
             from the selections below by 28th February.
           </p>
 
           <div className="radio-button-container main">
-            <p className="radio-question save-question">
+            <p className="radio-question margin-top">
               <b>Will you be attending?</b> <br />
               Please click yes or no. Thank you.
             </p>
@@ -185,18 +180,20 @@ const RsvpForm = () => {
           />
         </div>
 
+        <p className="menu-subhead">Guest one menu choices</p>
+
         <div>
           <input
             type="text"
             name="guest1.name"
-            placeholder="Guest One Name"
+            placeholder="Guest one name"
             value={formData.guest1.name}
             onChange={handleInputChange}
             disabled={isDisabled}
           />
         </div>
-        <p className="radio-question save-question">
-          Guest One please choose your meal from the selections below.
+        <p className="guest-choose">
+          Guest one please choose your meal from the selections below.
         </p>
 
         <div className="select-wrapper">
@@ -206,7 +203,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest One Starter</option>
+            <option value="">Guest one starter</option>
             {starters.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -222,7 +219,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest One Main</option>
+            <option value="">Guest one main</option>
             {mains.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -238,7 +235,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest One Dessert</option>
+            <option value="">Guest one dessert</option>
             {desserts.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -255,18 +252,20 @@ const RsvpForm = () => {
           />
         </div>
 
+        <p className="menu-subhead">Guest two menu choices</p>
+
         <div>
           <input
             type="text"
             name="guest2.name"
-            placeholder="Guest Two Name"
+            placeholder="Guest two name"
             value={formData.guest2.name}
             onChange={handleInputChange}
             disabled={isDisabled}
           />
         </div>
-        <p className="radio-question save-question margin-top-radio">
-          Guest Two please choose your meal from the selections below.
+        <p className="guest-choose">
+          Guest two please choose your meal from the selections below.
         </p>
         <div className="select-wrapper">
           <select
@@ -275,7 +274,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest Two Starter</option>
+            <option value="">Guest two starter</option>
             {starters.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -291,7 +290,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest Two Main</option>
+            <option value="">Guest two main</option>
             {mains.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -307,7 +306,7 @@ const RsvpForm = () => {
             onChange={handleInputChange}
             disabled={isDisabled}
           >
-            <option value="">Guest Two Dessert</option>
+            <option value="">Guest two dessert</option>
             {desserts.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -320,7 +319,7 @@ const RsvpForm = () => {
           <img
             src={eatingIllo}
             alt="Plate illustration"
-            className="eating-illo-form"
+            className="eating-illo-form bottom-margin"
           />
         </div>
 

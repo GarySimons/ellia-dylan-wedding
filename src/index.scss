@@ -84,11 +84,18 @@ code {
   .page-subtext {
     font-size: 1.5rem;
     font-weight: 600;
-    color: $second-red;
+    color: $main-red;
 
     &.bottom-margin {
       margin-bottom: 1rem;
     }
+  }
+
+  .menu-subhead {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $main-red;
+    margin: 1rem 0 0 0;
   }
 
   .hotel-grid {
@@ -204,12 +211,15 @@ code {
 }
 
 .text-link {
-  text-decoration: underline;
-  cursor: pointer;
-  margin-right: 0.35rem;
+  a {
+    color: $main-red;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0 0.35rem 0 0;
 
-  &:hover {
-    opacity: 0.6;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 

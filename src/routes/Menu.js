@@ -16,7 +16,7 @@ const Menu = () => {
           <span className="text-link">
             <Link to="/rsvp">RSVP</Link>
           </span>
-          page.
+          page
         </p>
         <div className="div-flex-menu">
           <div>
