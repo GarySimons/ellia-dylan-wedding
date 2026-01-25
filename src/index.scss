@@ -181,6 +181,18 @@ code {
       }
     }
 
+    &.link-with-bottom-margin {
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08rem;
+      text-underline-offset: 0.2rem;
+      margin: -1.1rem 0 3rem 0;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
     &.link {
       font-weight: 600;
       margin-bottom: 0;
@@ -193,6 +205,8 @@ code {
         opacity: 0.6;
       }
     }
+
+        
 
     &.bold-link {
       font-weight: 800;

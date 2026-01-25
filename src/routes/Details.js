@@ -13,12 +13,12 @@ const Details = () => {
       <div className="main-container">
         <h1 className="page-heading">Details</h1>
         <div className="page-content-container">
-          <p className="page-subtitle">The wedding of</p>
+          {/* <p className="page-subtitle">The wedding of</p>
           <p className="page-subtitle bold">
             Ellia Coldwell-Simons & Dylan Scalet
-          </p>
+          </p> */}
           <p className="page-text bold">Date</p>
-          <p className="page-text">Saturday 23 May 2026</p>
+          <p className="page-text">Saturday 23rd May 2026</p>
           <img
             src={barnIllo}
             alt="South Lodge illustration"
@@ -27,8 +27,7 @@ const Details = () => {
           <p className="page-text bold">Location</p>
           <p className="page-text">
             South Stoke Barn, <br />
-            Arundel, West Sussex, <br />
-            BN18 9PF
+            Arundel, West Sussex, BN18 9PF
           </p>
           <p className="page-text link">
             <a href="https://www.southstokebarn.co.uk/" target="_blank">
@@ -48,13 +47,19 @@ const Details = () => {
           </div>
           <p className="page-text bold">Dress Code</p>
           <p className="page-text">
-            Smart Casual
-            <br /> (Kilts welcome)
+            Formal and fun (kilts and colours welcome!)
+          </p>
+          <p className="page-text bold">Gifts</p>
+          <p className="page-text">
+            Xxxxxxx xxxxxx xxx xxxxxx xxxxx xxxxx xxxxx xxxx xxxx xxxx xxxx xxxx
           </p>
           <p className="page-text bold">Accommodation</p>
           <p className="page-text">Here are a few local options</p>
-          <p className="page-text link">
+          <p className="page-text link-with-bottom-margin">
             <Link to="/accommodation">Places to stay</Link>
+          </p>
+          <p className="page-text link bold">
+            <Link to="/rsvp">Please RSVP by 31st March</Link>
           </p>
         </div>
       </div>

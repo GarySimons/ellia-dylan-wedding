@@ -127,7 +127,7 @@ const RsvpForm = () => {
         <div className="radio-container">
           <p className="page-subtext">
             Please let us know if you intend on coming, and choose your food
-            from the selections below by 28th February.
+            from the selections below by 31st March.
           </p>
 
           <div className="radio-button-container main">

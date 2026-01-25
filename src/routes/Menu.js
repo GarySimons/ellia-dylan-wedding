@@ -26,7 +26,8 @@ const Menu = () => {
             <p className="page-text no-margin">Pesto Mousse Crostini (v) </p>
             <p className="page-text no-margin">Onion Bhajis (vg)</p>
             <p className="page-text no-margin">Fruit Skewer (vg)</p>
-            <p className="page-text">Mini Sausages and Chicken Skewers</p>
+            <p className="page-text no-margin">Mini Sausages</p>
+            <p className="page-text">Chicken Skewers</p>
           </div>
 
           <img
