@@ -118,17 +118,40 @@ const RsvpForm = () => {
         setTimeout(() => setStatus(""), 4000);
       });
   };
-  console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+
   const isDisabled = formData.attendance === "";
+
+  const yesFormComplete =
+    formData.email &&
+    formData.guest1.name &&
+    formData.guest1.starter &&
+    formData.guest1.main &&
+    formData.guest1.dessert &&
+    formData.guest2.name &&
+    formData.guest2.starter &&
+    formData.guest2.main &&
+    formData.guest2.dessert;
+
+  const noFormComplete = formData.email && formData.message;
 
   return (
     <div className="contact-form">
       <form onSubmit={sendEmail}>
         <div className="radio-container">
-          <p className="page-subtext">
-            Please let us know if you intend on coming, and choose your food
-            from the selections below by 31st March.
-          </p>
+          {(formData.attendance === "" || formData.attendance === "no") && (
+            <p className="page-subtext">
+              Please let us know if you intend on coming by 31st March.
+            </p>
+          )}
+
+          {formData.attendance === "yes" && (
+            <>
+              <p className="page-subtext">
+                Please let us know if you intend on coming, and choose your food
+                from the selections below by 31st March.
+              </p>
+            </>
+          )}
 
           <div className="radio-button-container main">
             <p className="radio-question margin-top">
@@ -167,178 +190,239 @@ const RsvpForm = () => {
           </div>
         </div>
 
-        <div>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-            disabled={isDisabled}
-          />
-        </div>
+        {formData.attendance === "" && null}
 
-        <p className="menu-subhead">Guest one menu choices</p>
+        {formData.attendance === "yes" && (
+          <>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                disabled={isDisabled}
+              />
+            </div>
 
-        <div>
-          <input
-            type="text"
-            name="guest1.name"
-            placeholder="Guest one name"
-            value={formData.guest1.name}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          />
-        </div>
-        <p className="guest-choose">
-          Guest one please choose your meal from the selections below.
-        </p>
+            <div className="div-flex ">
+              <img
+                src={eatingIllo}
+                alt="Plate illustration"
+                className="eating-illo-form"
+              />
+            </div>
 
-        <div className="select-wrapper">
-          <select
-            name="guest1.starter"
-            value={formData.guest1.starter}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest one starter</option>
-            {starters.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <p className="menu-subhead">Guest one menu choices</p>
+            <div>
+              <input
+                type="text"
+                name="guest1.name"
+                placeholder="Guest one name"
+                value={formData.guest1.name}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              />
+            </div>
+            <p className="guest-choose">
+              Guest one please choose your meal from the dropdown selections
+              below.
+            </p>
 
-        <div className="select-wrapper">
-          <select
-            name="guest1.main"
-            value={formData.guest1.main}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest one main</option>
-            {mains.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div className="select-wrapper">
+              <select
+                name="guest1.starter"
+                value={formData.guest1.starter}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest one starter</option>
+                {starters.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="select-wrapper">
-          <select
-            name="guest1.dessert"
-            value={formData.guest1.dessert}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest one dessert</option>
-            {desserts.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div className="select-wrapper">
+              <select
+                name="guest1.main"
+                value={formData.guest1.main}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest one main</option>
+                {mains.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="div-flex ">
-          <img
-            src={eatingIllo}
-            alt="Plate illustration"
-            className="eating-illo-form"
-          />
-        </div>
+            <div className="select-wrapper">
+              <select
+                name="guest1.dessert"
+                value={formData.guest1.dessert}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest one dessert</option>
+                {desserts.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <p className="menu-subhead">Guest two menu choices</p>
+            <div className="div-flex ">
+              <img
+                src={eatingIllo}
+                alt="Plate illustration"
+                className="eating-illo-form"
+              />
+            </div>
 
-        <div>
-          <input
-            type="text"
-            name="guest2.name"
-            placeholder="Guest two name"
-            value={formData.guest2.name}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          />
-        </div>
-        <p className="guest-choose">
-          Guest two please choose your meal from the selections below.
-        </p>
-        <div className="select-wrapper">
-          <select
-            name="guest2.starter"
-            value={formData.guest2.starter}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest two starter</option>
-            {starters.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <p className="menu-subhead">Guest two menu choices</p>
 
-        <div className="select-wrapper">
-          <select
-            name="guest2.main"
-            value={formData.guest2.main}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest two main</option>
-            {mains.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div>
+              <input
+                type="text"
+                name="guest2.name"
+                placeholder="Guest two name"
+                value={formData.guest2.name}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              />
+            </div>
+            <p className="guest-choose">
+              Guest two please choose your meal from dropdown selections below.
+            </p>
+            <div className="select-wrapper">
+              <select
+                name="guest2.starter"
+                value={formData.guest2.starter}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest two starter</option>
+                {starters.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="select-wrapper">
-          <select
-            name="guest2.dessert"
-            value={formData.guest2.dessert}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          >
-            <option value="">Guest two dessert</option>
-            {desserts.map((item) => (
-              <option key={item} value={item}>
-                {item}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div className="select-wrapper">
+              <select
+                name="guest2.main"
+                value={formData.guest2.main}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest two main</option>
+                {mains.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div className="div-flex ">
-          <img
-            src={eatingIllo}
-            alt="Plate illustration"
-            className="eating-illo-form bottom-margin"
-          />
-        </div>
+            <div className="select-wrapper">
+              <select
+                name="guest2.dessert"
+                value={formData.guest2.dessert}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              >
+                <option value="">Guest two dessert</option>
+                {desserts.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-        <div>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Please let us know any dietary requirements or allergies"
-            value={formData.message}
-            onChange={handleInputChange}
-            disabled={isDisabled}
-          ></textarea>
-        </div>
+            <div className="div-flex ">
+              <img
+                src={eatingIllo}
+                alt="Plate illustration"
+                className="eating-illo-form bottom-margin"
+              />
+            </div>
 
-        <div>
-          <button type="submit" disabled={isDisabled}>
-            Send
-          </button>
-        </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please let us know any dietary requirements or allergies"
+                value={formData.message}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              ></textarea>
+            </div>
+            <div className="tooltip-wrapper">
+              <button type="submit" disabled={!yesFormComplete}>
+                Send
+              </button>
+
+              {!yesFormComplete && (
+                <span className="tooltip">
+                  Please fill out all required fields
+                </span>
+              )}
+            </div>
+          </>
+        )}
+
+        {formData.attendance === "no" && (
+          <>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                disabled={isDisabled}
+              />
+            </div>
+            <p className="page-text bold">
+              Sorry you are not able to attend. Hope to see you soon.
+            </p>
+            <p className="page-text bold">
+              Please let us know your names in the box below.
+            </p>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Guest names and message"
+                value={formData.message}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              ></textarea>
+            </div>
+            <div className="tooltip-wrapper">
+              <button type="submit" disabled={!noFormComplete}>
+                Send
+              </button>
+
+              {!yesFormComplete && (
+                <span className="tooltip">Please fill out email</span>
+              )}
+            </div>
+          </>
+        )}
       </form>
 
       {status && (
