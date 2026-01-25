@@ -22,12 +22,12 @@ const Menu = () => {
           <div>
             <p className="page-text bold overline">Canapes</p>
             <p className="page-text no-margin">A selection of:</p>
-            <p className="page-text no-margin">Mini Yorkshire Puddings (v)</p>
-            <p className="page-text no-margin">Pesto Mousse Crostini (v) </p>
-            <p className="page-text no-margin">Onion Bhajis (vg)</p>
-            <p className="page-text no-margin">Fruit Skewer (vg)</p>
-            <p className="page-text no-margin">Mini Sausages</p>
-            <p className="page-text">Chicken Skewers</p>
+            <p className="page-text no-margin">Mini Yorkshire puddings (v)</p>
+            <p className="page-text no-margin">Pesto mousse crostini (v) </p>
+            <p className="page-text no-margin">Onion bhajis (vg)</p>
+            <p className="page-text no-margin">Fruit skewer (vg)</p>
+            <p className="page-text no-margin">Mini sausages</p>
+            <p className="page-text">Chicken skewers</p>
           </div>
 
           <img
@@ -51,25 +51,25 @@ const Menu = () => {
             <div className="div-flex-one">
               <p className="page-text bold overline">Main</p>
               <p className="page-text">
-                Roast Chicken with Roast Potatoes, Veg and Yorkshire Pudding
+                Roast chicken with roast potatoes, veg and Yorkshire pudding
               </p>
               <p className="page-text menu-overline">
-                Seared Salmon with Garlic New Potatoes and Asparagus in a Dill
-                Sauce
+                Seared salmon with garlic new potatoes and asparagus in a dill
+                sauce
               </p>
               <p className="page-text menu-overline">
-                Baked Butternut Squash with Couscous, Feta and Tenderstem
-                Broccoli (v/vg)
+                Baked butternut squash with couscous, feta and tenderstem
+                broccoli (v/vg)
               </p>
             </div>
 
             <div className="div-flex-one">
               <p className="page-text bold overline">Dessert</p>
-              <p className="page-text">Sticky Toffee Pudding</p>
+              <p className="page-text">Sticky toffee pudding</p>
               <p className="page-text menu-overline">
-                Lemon Tart with Fruit Compote
+                Lemon tart with fruit compote
               </p>
-              <p className="page-text menu-overline">Chocolate Torte (vg)</p>
+              <p className="page-text menu-overline">Chocolate torte (vg)</p>
             </div>
           </div>
           <img
@@ -80,7 +80,7 @@ const Menu = () => {
           <div>
             <p className="page-text bold overline">Evening Food</p>
             <p className="page-text">
-              American Style Hotdogs with Potato Wedges
+              American style hotdogs with potato wedges
             </p>
           </div>
         </div>

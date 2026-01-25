@@ -5,6 +5,7 @@ import barnIllo from "../assets/images/south_stoke_barn.png";
 import redFlowerThree from "../assets/images/red-flower-3.png";
 
 import "./HomeStyles.scss";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (

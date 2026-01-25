@@ -64,7 +64,7 @@ function App() {
         <Router>
           <RedirectHandler />
           <Routes>
-            {/* <Route path="/" element={<PasswordPage />} /> */}
+            <Route path="/" element={<PasswordPage />} />
 
             <Route path="*" element={<Navigate to="/" />} />
             <Route

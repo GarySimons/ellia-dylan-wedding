@@ -23,15 +23,18 @@ const Navbar = () => {
 
   return (
     <div className="header">
-      <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
+      <Link
+        to="/home"
+        className={location.pathname === "/home" ? "active-link" : ""}
+      >
         <p className="logo">E&D</p>
       </Link>
       <div className="nav-links-container">
         <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link
-              to="/"
-              className={location.pathname === "/" ? "active-link" : ""}
+              to="/home"
+              className={location.pathname === "/home" ? "active-link" : ""}
             >
               HOME
             </Link>

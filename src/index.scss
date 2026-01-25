@@ -505,7 +505,7 @@ margin-top: 0;
     @media (min-width: 480px) {
     flex-direction: row;
     height: 6rem;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   &.order-overline {
@@ -515,9 +515,13 @@ margin-top: 0;
       top: -0.3rem;
       left: 50%;
       transform: translateX(-50%);
-      width: 100%;
+      width: 60vw;
       height: 0.08rem;
       background: $main-red;
+
+          @media (min-width: 480px) {
+width: 20rem;
+  }
     }
   }
 

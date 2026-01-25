@@ -26,19 +26,19 @@ const RsvpForm = () => {
     "Melon and parma ham with rocket salad",
     "Tempura prawns with sweet chilli sauce and rocket",
     "Creamy garlic mushrooms on parsley buttered ciabatta (v/vg)",
-    "No Starter",
+    "No starter",
   ];
   const mains = [
-    "Roast Chicken with Roast Potatoes, Veg and Yorkshire Pudding",
-    "Seared Salmon with Garlic New Potatoes and Asparagus in a Dill Sauce",
-    "Baked Butternut Squash with Couscous, Feta and Tenderstem Broccoli (v/vg)",
-    "No Main",
+    "Roast chicken with roast potatoes, veg and Yorkshire pudding",
+    "Seared salmon with garlic new potatoes and asparagus in a dill sauce",
+    "Baked butternut squash with couscous, feta and tenderstem broccoli (v/vg)",
+    "No main",
   ];
   const desserts = [
-    "Sticky Toffee Pudding",
-    "Lemon Tart with Fruit Compote",
-    "Chocolate Torte (vg)",
-    "No Dessert",
+    "Sticky toffee pudding",
+    "Lemon tart with fruit compote",
+    "Chocolate torte (vg)",
+    "No dessert",
   ];
 
   const [status, setStatus] = useState("");
