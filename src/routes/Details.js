@@ -13,10 +13,6 @@ const Details = () => {
       <div className="main-container">
         <h1 className="page-heading">Details</h1>
         <div className="page-content-container">
-          {/* <p className="page-subtitle">The wedding of</p>
-          <p className="page-subtitle bold">
-            Ellia Coldwell-Simons & Dylan Scalet
-          </p> */}
           <p className="page-text bold">Date</p>
           <p className="page-text">Saturday 23rd May 2026</p>
           <img
