@@ -92,7 +92,7 @@ const Details = () => {
           <p className="page-text">
             If you do feel inclined to give something, a contribution toward our
             honeymoon would be deeply appreciated. You can pay into our Monzo or
-            PayPal accounts by scanning the QR codes below. Alternatively , we
+            PayPal accounts by scanning the QR codes below. Alternatively, we
             will have a place to safely store cards on the day.
           </p>
           <p className="page-text margin-bottom">
