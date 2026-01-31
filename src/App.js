@@ -70,33 +70,65 @@ function App() {
             <Route
               path="/home"
               element={
-                // <ProtectedRoute>
-                //   <SaveDate />
-                // </ProtectedRoute>
-                <Home />
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
               }
             />
-            <Route path="/" element={<Home />} />
-            <Route path="/details" element={<Details />} />
-            <Route path="/order-of-celebrations" element={<Order />} />
-            <Route path="/location" element={<Location />} />
-            <Route path="/menu" element={<Menu />} />
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <Home />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/details"
+              element={
+                <ProtectedRoute>
+                  <Details />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/order-of-celebrations"
+              element={
+                <ProtectedRoute>
+                  <Order />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/location"
+              element={
+                <ProtectedRoute>
+                  <Location />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/menu"
+              element={
+                <ProtectedRoute>
+                  <Menu />
+                </ProtectedRoute>
+              }
+            />
             <Route
               path="/accommodation"
               element={
-                // <ProtectedRoute>
-                //   <Accommodation />
-                // </ProtectedRoute>
-                <Accommodation />
+                <ProtectedRoute>
+                  <Accommodation />
+                </ProtectedRoute>
               }
             />
             <Route
               path="/rsvp"
               element={
-                // <ProtectedRoute>
-                //   <Contact />
-                // </ProtectedRoute>
-                <Contact />
+                <ProtectedRoute>
+                  <Contact />
+                </ProtectedRoute>
               }
             />
             <Route path="/save-the-date" element={<SaveDate />} />
