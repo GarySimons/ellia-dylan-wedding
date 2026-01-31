@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import barnIllo from "../assets/images/south_stoke_barn.png";
 import dressIllo from "../assets/images/red-dress.png";
 import kiltIllo from "../assets/images/kilt.png";
+import QRCodeMonzo from "../assets/images/qr-code-one.png";
+import QRCodePayPal from "../assets/images/qr-code-two.jpeg";
 import { Link } from "react-router-dom";
 
 const Details = () => {
@@ -81,9 +83,46 @@ const Details = () => {
           </a>
 
           <p className="page-text bold overline">Gifts</p>
-          <p className="page-text margin-bottom">
-            Xxxxxxx xxxxxx xxx xxxxxx xxxxx xxxxx xxxxx xxxx xxxx xxxx xxxx xxxx
+          <p className="page-text">
+            <b>
+              Your presence at our wedding is truly the greatest gift we could
+              ask for.
+            </b>
           </p>
+          <p className="page-text">
+            If you do feel inclined to give something, a contribution toward our
+            honeymoon would be deeply appreciated. You can pay into our Monzo or
+            PayPal accounts by scanning the QR codes below. Alternatively , we
+            will have a place to safely store cards on the day.
+          </p>
+          <p className="page-text margin-bottom">
+            Thank you. We're so grateful to celebrate with you!
+          </p>
+
+          <div className="div-flex-mob-qr-code">
+            <div className="qr-white-box">
+              <img
+                src={QRCodeMonzo}
+                alt="Monzo QR code"
+                className="qr-code-monzo"
+              />
+              <p className="page-text bold">
+                Scan for <br />
+                Monzo Account
+              </p>
+            </div>
+            <div className="qr-white-box">
+              <img
+                src={QRCodePayPal}
+                alt="PayPal QR code"
+                className="qr-code-paypal"
+              />
+              <p className="page-text bold">
+                Scan for <br />
+                PayPal Account
+              </p>
+            </div>
+          </div>
           <p className="page-text bold overline">Accommodation</p>
           <p className="page-text">Here are a few local options</p>
           <p className="page-text link-with-bottom-margin">

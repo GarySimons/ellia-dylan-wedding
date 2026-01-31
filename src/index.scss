@@ -479,8 +479,42 @@ code {
   }
 }
 
+.div-flex-mob-qr-code{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: -1rem auto 3rem auto;
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
 .div-flex-one {
   flex: 1;
+}
+
+.qr-white-box {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 0.1rem solid $main-red;
+  border-radius: 0.5rem;
+}
+
+.qr-code-monzo {
+  height: 7em;
+  width: auto;
+  margin: 0;
+}
+
+.qr-code-paypal {
+  height: 7em;
+  width: auto;
+  margin: 0;
 }
 
 .red-dress-illo {
