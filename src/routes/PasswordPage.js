@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import Footer from "../components/Footer";
 import barnIllo from "../assets/images/south_stoke_barn.png";
+import barnDoorIllo from "../assets/images/barn-door.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 
@@ -33,58 +34,68 @@ function PasswordPage() {
 
   return (
     <div>
-      <div className="main-container">
-        <h1 className="page-heading password">Ellia & Dylan's Wedding</h1>
-        <p className="page-subtext">Please enter the supplied password</p>
-        <div className="password-form-container">
-          <form onSubmit={handleSubmit} className="password-form">
-            <div className="password-input-wrapper">
-              <input
-                type={showPassword ? "text" : "password"}
-                className="password-input"
-                placeholder="Enter password"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-              />
-              <span
-                className="password-toggle"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? (
-                  <VisibilityOffIcon
-                    sx={{
-                      height: "1.3rem",
-                      marginTop: "0.2rem",
-                      color: "#b5100d",
-                    }}
-                  />
-                ) : (
-                  <VisibilityIcon
-                    sx={{
-                      height: "1.3rem",
-                      marginTop: "0.2rem",
-                      color: "#b5100d",
-                    }}
-                  />
-                )}
-              </span>
-            </div>
-            <button type="submit" className="password-button">
-              Enter
-            </button>
-          </form>
-          <img
-            src={barnIllo}
-            alt="South Lodge illustration"
-            className="barn-image-password"
-          />
-        </div>
+      <div className="main-container-password">
+        <div className="content-container-password">
+          <h1 className="page-heading-password">
+            Ellia & Dylan's
+            <br />
+            Wedding
+          </h1>
 
-        {incorrectPasswordMessage && (
-          <div className="success-message">
-            <p>Incorrect password</p>
+          <p className="page-subtext-password">
+            Please enter the <br />
+            supplied password
+          </p>
+          <div className="password-form-container">
+            <form onSubmit={handleSubmit} className="password-form">
+              <div className="password-input-wrapper">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  className="password-input"
+                  placeholder="Enter password"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                />
+                <span
+                  className="password-toggle"
+                  onClick={togglePasswordVisibility}
+                >
+                  {showPassword ? (
+                    <VisibilityOffIcon
+                      sx={{
+                        height: "1.3rem",
+                        marginTop: "0.2rem",
+                        color: "#b5100d",
+                      }}
+                    />
+                  ) : (
+                    <VisibilityIcon
+                      sx={{
+                        height: "1.3rem",
+                        marginTop: "0.2rem",
+                        color: "#b5100d",
+                      }}
+                    />
+                  )}
+                </span>
+              </div>
+              <button type="submit" className="password-button">
+                Enter
+              </button>
+            </form>
           </div>
-        )}
+
+          {incorrectPasswordMessage && (
+            <div className="success-message">
+              <p>Incorrect password</p>
+            </div>
+          )}
+        </div>
+        <img
+          src={barnDoorIllo}
+          alt="South Lodge illustration"
+          className="barn-door-password"
+        />
       </div>
       <Footer />
     </div>

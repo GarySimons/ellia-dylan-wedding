@@ -44,6 +44,77 @@ code {
   }
 }
 
+.main-container-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90vw;
+  max-width: 700px;
+  margin: 0 auto 0 auto;
+  min-height: 90vh;
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: 420px) {
+    margin: 2rem auto 4rem auto;
+  }
+
+  .content-container-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 10;
+  }
+
+  .page-heading-password {
+    font-family: "Prata", serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ffffff;
+    border-bottom: 0.08rem solid #ffffff;
+    margin: 0 0 1.5rem 0;
+
+    @media screen and (min-width: 420px) {
+      font-size: 2rem;
+    }
+  }
+
+  .page-subtext-password {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+
+    &.bottom-margin {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .barn-door-password {
+    height: 100%;
+    width: auto;
+    top: -2rem;
+    opacity: 0;
+    position: absolute;
+    animation: fadeIn 3s ease-in forwards;
+
+    @media (min-width: 480px) {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -155,6 +226,10 @@ code {
       color: $main-red;
     }
 
+    &.margin-bottom {
+      margin-bottom: 2.5rem;
+    }
+
     &.overline {
       &::before {
         content: "";
@@ -240,11 +315,13 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 30vh;
   margin-top: 2rem;
+  z-index: 9;
+  background-color: pink;
 
   @media screen and (min-width: 420px) {
-    height: 60vh;
+    height: 20vh;
     margin-top: 1rem;
   }
 
@@ -269,8 +346,8 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $main-red;
-    color: white;
+    background-color: #ffffff;
+    color: $main-red;
     height: 3rem;
     width: 15rem;
     font-size: 0.8rem;
@@ -285,6 +362,7 @@ code {
 
     &:hover {
       background-color: #a65759;
+      color: #ffffff;
     }
   }
 
@@ -479,6 +557,11 @@ code {
   animation-delay: 3s;
 }
 
+.map-container {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
 .order-text {
   font-size: 1rem;
   font-weight: 400;
@@ -486,9 +569,9 @@ code {
   text-align: center;
   margin-top: -0.5rem;
 
-        @media (min-width: 480px) {
-text-align: left;
-margin-top: 0;
+  @media (min-width: 480px) {
+    text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -502,7 +585,7 @@ margin-top: 0;
   margin-top: 1rem;
   position: relative;
 
-    @media (min-width: 480px) {
+  @media (min-width: 480px) {
     flex-direction: row;
     height: 6rem;
     gap: 1rem;
@@ -519,9 +602,9 @@ margin-top: 0;
       height: 0.08rem;
       background: $main-red;
 
-          @media (min-width: 480px) {
-width: 20rem;
-  }
+      @media (min-width: 480px) {
+        width: 20rem;
+      }
     }
   }
 
@@ -532,8 +615,8 @@ width: 20rem;
     width: 12rem;
 
     @media (min-width: 480px) {
-justify-content: flex-end;
-  }
+      justify-content: flex-end;
+    }
   }
 
   .order-center-div {
@@ -549,9 +632,9 @@ justify-content: flex-end;
     align-items: center;
     width: 80vw;
 
-        @media (min-width: 480px) {
-justify-content: flex-start;
-width: 12rem;
-  }
+    @media (min-width: 480px) {
+      justify-content: flex-start;
+      width: 12rem;
+    }
   }
 }
