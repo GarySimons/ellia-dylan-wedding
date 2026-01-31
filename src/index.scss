@@ -70,11 +70,13 @@ code {
     left: 50%;
     transform: translate(-48%, -15%);
     z-index: 10;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
 
     @media screen and (min-width: 420px) {
       top: 50%;
       left: 50%;
-      transform: translate(-48%, -15%);
+      transform: translate(-48%, -10%);
     }
   }
 
