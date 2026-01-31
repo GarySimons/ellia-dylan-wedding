@@ -170,11 +170,11 @@
 .barn-image-details {
   height: 4rem;
   width: auto;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
 
   @media (min-width: 480px) {
     height: 6rem;
-    margin: 0 0 0.25rem 0;
+    margin: 0.5rem 0 0.25rem 0;
   }
 }
 

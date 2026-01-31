@@ -312,3 +312,8 @@ select {
   font-family: inherit;
   border-radius: 8px;
 }
+
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

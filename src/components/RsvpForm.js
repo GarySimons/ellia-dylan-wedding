@@ -133,6 +133,8 @@ const RsvpForm = () => {
     formData.guest2.dessert;
 
   const noFormComplete = formData.email && formData.message;
+  const guest1NameEntered = formData.guest1.name.trim() !== "";
+  const guest2NameEntered = formData.guest2.name.trim() !== "";
 
   return (
     <div className="contact-form">
@@ -236,7 +238,7 @@ const RsvpForm = () => {
                 name="guest1.starter"
                 value={formData.guest1.starter}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest1NameEntered}
               >
                 <option value="">Guest one starter</option>
                 {starters.map((item) => (
@@ -252,7 +254,7 @@ const RsvpForm = () => {
                 name="guest1.main"
                 value={formData.guest1.main}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest1NameEntered}
               >
                 <option value="">Guest one main</option>
                 {mains.map((item) => (
@@ -268,7 +270,7 @@ const RsvpForm = () => {
                 name="guest1.dessert"
                 value={formData.guest1.dessert}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest1NameEntered}
               >
                 <option value="">Guest one dessert</option>
                 {desserts.map((item) => (
@@ -307,7 +309,7 @@ const RsvpForm = () => {
                 name="guest2.starter"
                 value={formData.guest2.starter}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest2NameEntered}
               >
                 <option value="">Guest two starter</option>
                 {starters.map((item) => (
@@ -323,7 +325,7 @@ const RsvpForm = () => {
                 name="guest2.main"
                 value={formData.guest2.main}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest2NameEntered}
               >
                 <option value="">Guest two main</option>
                 {mains.map((item) => (
@@ -339,7 +341,7 @@ const RsvpForm = () => {
                 name="guest2.dessert"
                 value={formData.guest2.dessert}
                 onChange={handleInputChange}
-                disabled={isDisabled}
+                disabled={isDisabled || !guest2NameEntered}
               >
                 <option value="">Guest two dessert</option>
                 {desserts.map((item) => (
@@ -374,9 +376,7 @@ const RsvpForm = () => {
               </button>
 
               {!yesFormComplete && (
-                <span className="tooltip">
-                  Please fill out all required fields
-                </span>
+                <span className="tooltip">Please fill out all fields</span>
               )}
             </div>
           </>
@@ -418,7 +418,7 @@ const RsvpForm = () => {
               </button>
 
               {!yesFormComplete && (
-                <span className="tooltip">Please fill out email</span>
+                <span className="tooltip">Please fill out all fields</span>
               )}
             </div>
           </>

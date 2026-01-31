@@ -10,7 +10,11 @@ const Location = () => {
       <div className="main-container">
         <h1 className="page-heading">Location</h1>
         <p className="page-text bold-link">
-          <a href="https://www.southstokebarn.co.uk/">
+          <a
+            href="https://www.southstokebarn.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             www.southstokebarn.co.uk
           </a>
         </p>
