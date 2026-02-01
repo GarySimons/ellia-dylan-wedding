@@ -9,6 +9,9 @@ const Location = () => {
       <Navbar />
       <div className="main-container">
         <h1 className="page-heading">Location</h1>
+        <p className="page-text">
+          <b>South Stoke Barn, Arundel, West Sussex, BN18 9PF</b>
+        </p>
         <p className="page-text bold-link">
           <a
             href="https://www.southstokebarn.co.uk/"

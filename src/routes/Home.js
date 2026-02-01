@@ -47,7 +47,9 @@ const Home = () => {
         <div className="home-date-container">
           <p className="home-date">23.05.26</p>
           <hr className="home-line" />
-          <p className="home-address">SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX</p>
+          <p className="home-address">
+            SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX, BN18 9PF
+          </p>
         </div>
         <img
           src={barnIllo}
