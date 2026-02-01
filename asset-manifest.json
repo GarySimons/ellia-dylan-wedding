@@ -1,15 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb68416d.css",
-    "main.js": "/static/js/main.192b6bc8.js",
-    "static/media/south_stoke_barn.png": "/static/media/south_stoke_barn.232af77afdb4bee97640.png",
-    "static/media/wax-seal.png": "/static/media/wax-seal.458d98c78920b99cecbd.png",
+    "main.css": "/static/css/main.8fda4340.css",
+    "main.js": "/static/js/main.860857f0.js",
+    "static/media/barn-door.png": "/static/media/barn-door.ae3140dbf63f09cbcdd9.png",
+    "static/media/south_stoke_barn.png": "/static/media/south_stoke_barn.1e60cec0e4706fc53dcc.png",
+    "static/media/red-dress.png": "/static/media/red-dress.728f9c2264bd5c8c6ebc.png",
+    "static/media/red-flower-1.png": "/static/media/red-flower-1.1de3e29be89eb7f7968a.png",
+    "static/media/red-flower-3.png": "/static/media/red-flower-3.237d87a6e2b30ce0c0da.png",
+    "static/media/red-flower-2.png": "/static/media/red-flower-2.a42fecbbc926ddc3f80b.png",
+    "static/media/rings.png": "/static/media/rings.e1dfb7e7b1b7823435ed.png",
+    "static/media/kilt.png": "/static/media/kilt.7880aef9a547cacdc574.png",
+    "static/media/glitterball.png": "/static/media/glitterball.9e96a5b53668e79d5f4a.png",
+    "static/media/flower-1.png": "/static/media/flower-1.6144105d9a913db996e7.png",
+    "static/media/champagne.png": "/static/media/champagne.15b5521470682bd47507.png",
+    "static/media/camera.png": "/static/media/camera.16fb0e6bac461cd69ae0.png",
+    "static/media/taxi.png": "/static/media/taxi.87b6fc91303c001ac0c7.png",
+    "static/media/flower-9.png": "/static/media/flower-9.cdd86d46573f7a8d8101.png",
+    "static/media/cocktail.png": "/static/media/cocktail.fb28cdfdc634fb2914c2.png",
+    "static/media/flower-8.png": "/static/media/flower-8.bd4c67ec7e979fad5176.png",
+    "static/media/flower-3.png": "/static/media/flower-3.815f23eaa388eb017cb7.png",
+    "static/media/flower-6.png": "/static/media/flower-6.1a009d834d3c04c276e1.png",
+    "static/media/flower-4.png": "/static/media/flower-4.f832e505bd1bc7bbb824.png",
+    "static/media/qr-code-one.png": "/static/media/qr-code-one.5a1399c36020e346e4a1.png",
+    "static/media/eating.png": "/static/media/eating.bfa5c9104712bb35f2f6.png",
+    "static/media/qr-code-two.jpeg": "/static/media/qr-code-two.31e0116cc05cac53a04f.jpeg",
+    "static/media/confetti.png": "/static/media/confetti.19bfddb08971ad05413d.png",
+    "static/media/flower-7.png": "/static/media/flower-7.484ded68d7c69c5a2c79.png",
+    "static/media/flower-2.png": "/static/media/flower-2.d0dcdc9aac70c957728b.png",
+    "static/media/flower-5.png": "/static/media/flower-5.62acd846e1a86e5b11dc.png",
     "index.html": "/index.html",
-    "main.eb68416d.css.map": "/static/css/main.eb68416d.css.map",
-    "main.192b6bc8.js.map": "/static/js/main.192b6bc8.js.map"
+    "main.8fda4340.css.map": "/static/css/main.8fda4340.css.map",
+    "main.860857f0.js.map": "/static/js/main.860857f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb68416d.css",
-    "static/js/main.192b6bc8.js"
+    "static/css/main.8fda4340.css",
+    "static/js/main.860857f0.js"
   ]
 }
