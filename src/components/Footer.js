@@ -15,7 +15,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GCS
+          G Coldwell-Simons
         </a>
       </p>
     </div>
