@@ -25,7 +25,7 @@ const Location = () => {
           <Map />
         </div>
 
-        <p className="page-text bold overline">Train</p>
+        <p className="page-text bold overline">By Train</p>
         <p className="page-text">
           South Stoke Barn is a 10 minute taxi journey from Arundel Train
           Station.
