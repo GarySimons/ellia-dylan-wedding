@@ -57,10 +57,49 @@ const RsvpForm = () => {
     }
   }, []);
 
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+
+  //   if (name.includes(".")) {
+  //     const [guest, field] = name.split(".");
+  //     const updated = {
+  //       ...formData,
+  //       [guest]: {
+  //         ...formData[guest],
+  //         [field]: value,
+  //       },
+  //     };
+  //     setFormData(updated);
+  //     localStorage.setItem("saveFormData", JSON.stringify(updated));
+  //   } else {
+  //     const updated = { ...formData, [name]: value };
+  //     setFormData(updated);
+  //     localStorage.setItem("saveFormData", JSON.stringify(updated));
+  //   }
+  // };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    if (name.includes(".")) {
+    if (name.startsWith("guest1_")) {
+      const field = name.replace("guest1_", "");
+      setFormData((prev) => ({
+        ...prev,
+        guest1: {
+          ...prev.guest1,
+          [field]: value,
+        },
+      }));
+    } else if (name.startsWith("guest2_")) {
+      const field = name.replace("guest2_", "");
+      setFormData((prev) => ({
+        ...prev,
+        guest2: {
+          ...prev.guest2,
+          [field]: value,
+        },
+      }));
+    } else if (name.includes(".")) {
       const [guest, field] = name.split(".");
       const updated = {
         ...formData,
@@ -83,7 +122,7 @@ const RsvpForm = () => {
 
     const { email, attendance, guest1 } = formData;
 
-    if (!email || !attendance || !guest1.name) {
+    if (!email || !attendance || !formData.guest1.name) {
       setStatus("Please fill out required fields.");
       return;
     }
@@ -132,7 +171,12 @@ const RsvpForm = () => {
     formData.guest2.main &&
     formData.guest2.dessert;
 
-  const noFormComplete = formData.email && formData.message;
+  const noFormComplete =
+    formData.email &&
+    formData.guest1.name &&
+    formData.guest2.name &&
+    formData.message;
+
   const guest1NameEntered = formData.guest1.name.trim() !== "";
   const guest2NameEntered = formData.guest2.name.trim() !== "";
 
@@ -221,9 +265,9 @@ const RsvpForm = () => {
             <div>
               <input
                 type="text"
-                name="guest1.name"
+                name="guest1_name"
                 placeholder="Guest one name"
-                value={formData.guest1.name}
+                value={formData.guest1_name}
                 onChange={handleInputChange}
                 disabled={isDisabled}
               />
@@ -235,7 +279,7 @@ const RsvpForm = () => {
 
             <div className="select-wrapper">
               <select
-                name="guest1.starter"
+                name="guest1_starter"
                 value={formData.guest1.starter}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest1NameEntered}
@@ -251,7 +295,7 @@ const RsvpForm = () => {
 
             <div className="select-wrapper">
               <select
-                name="guest1.main"
+                name="guest1_main"
                 value={formData.guest1.main}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest1NameEntered}
@@ -267,7 +311,7 @@ const RsvpForm = () => {
 
             <div className="select-wrapper">
               <select
-                name="guest1.dessert"
+                name="guest1_dessert"
                 value={formData.guest1.dessert}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest1NameEntered}
@@ -294,9 +338,9 @@ const RsvpForm = () => {
             <div>
               <input
                 type="text"
-                name="guest2.name"
+                name="guest2_name"
                 placeholder="Guest two name"
-                value={formData.guest2.name}
+                value={formData.guest2_name}
                 onChange={handleInputChange}
                 disabled={isDisabled}
               />
@@ -306,7 +350,7 @@ const RsvpForm = () => {
             </p>
             <div className="select-wrapper">
               <select
-                name="guest2.starter"
+                name="guest2_starter"
                 value={formData.guest2.starter}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest2NameEntered}
@@ -322,7 +366,7 @@ const RsvpForm = () => {
 
             <div className="select-wrapper">
               <select
-                name="guest2.main"
+                name="guest2_main"
                 value={formData.guest2.main}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest2NameEntered}
@@ -338,7 +382,7 @@ const RsvpForm = () => {
 
             <div className="select-wrapper">
               <select
-                name="guest2.dessert"
+                name="guest2_dessert"
                 value={formData.guest2.dessert}
                 onChange={handleInputChange}
                 disabled={isDisabled || !guest2NameEntered}
@@ -396,17 +440,37 @@ const RsvpForm = () => {
                 disabled={isDisabled}
               />
             </div>
+            <div>
+              <input
+                type="text"
+                name="guest1_name"
+                placeholder="Guest one name"
+                value={formData.guest1.name}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="guest2_name"
+                placeholder="Guest two name"
+                value={formData.guest2.name}
+                onChange={handleInputChange}
+                disabled={isDisabled}
+              />
+            </div>
             <p className="page-text bold">
               Sorry you are not able to attend. Hope to see you soon.
             </p>
             <p className="page-text bold">
-              Please let us know your names in the box below.
+              Please send us a message in the box below.
             </p>
             <div>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Guest names and message"
+                placeholder="Message"
                 value={formData.message}
                 onChange={handleInputChange}
                 disabled={isDisabled}
