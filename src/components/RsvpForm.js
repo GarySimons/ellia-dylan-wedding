@@ -57,27 +57,6 @@ const RsvpForm = () => {
     }
   }, []);
 
-  // const handleInputChange = (e) => {
-  //   const { name, value } = e.target;
-
-  //   if (name.includes(".")) {
-  //     const [guest, field] = name.split(".");
-  //     const updated = {
-  //       ...formData,
-  //       [guest]: {
-  //         ...formData[guest],
-  //         [field]: value,
-  //       },
-  //     };
-  //     setFormData(updated);
-  //     localStorage.setItem("saveFormData", JSON.stringify(updated));
-  //   } else {
-  //     const updated = { ...formData, [name]: value };
-  //     setFormData(updated);
-  //     localStorage.setItem("saveFormData", JSON.stringify(updated));
-  //   }
-  // };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
@@ -165,17 +144,10 @@ const RsvpForm = () => {
     formData.guest1.name &&
     formData.guest1.starter &&
     formData.guest1.main &&
-    formData.guest1.dessert &&
-    formData.guest2.name &&
-    formData.guest2.starter &&
-    formData.guest2.main &&
-    formData.guest2.dessert;
+    formData.guest1.dessert;
 
   const noFormComplete =
-    formData.email &&
-    formData.guest1.name &&
-    formData.guest2.name &&
-    formData.message;
+    formData.email && formData.guest1.name && formData.message;
 
   const guest1NameEntered = formData.guest1.name.trim() !== "";
   const guest2NameEntered = formData.guest2.name.trim() !== "";
@@ -186,15 +158,15 @@ const RsvpForm = () => {
         <div className="radio-container">
           {(formData.attendance === "" || formData.attendance === "no") && (
             <p className="page-subtext">
-              Please let us know if you intend on coming by 31st March.
+              Please let us know if you are coming by 31st March.
             </p>
           )}
 
           {formData.attendance === "yes" && (
             <>
               <p className="page-subtext">
-                Please let us know if you intend on coming, and choose your food
-                from the selections below by 31st March.
+                Please let us know if you are coming, and choose your food from
+                the selections below by 31st March.
               </p>
             </>
           )}
@@ -420,7 +392,9 @@ const RsvpForm = () => {
               </button>
 
               {!yesFormComplete && (
-                <span className="tooltip">Please fill out all fields</span>
+                <span className="tooltip">
+                  Please fill out email and guest one fields
+                </span>
               )}
             </div>
           </>
@@ -482,7 +456,9 @@ const RsvpForm = () => {
               </button>
 
               {!yesFormComplete && (
-                <span className="tooltip">Please fill out all fields</span>
+                <span className="tooltip">
+                  Please fill out email, guest one and message fields
+                </span>
               )}
             </div>
           </>
