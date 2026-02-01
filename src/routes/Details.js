@@ -129,7 +129,9 @@ const Details = () => {
             <Link to="/accommodation">Places to stay</Link>
           </p>
           <p className="page-text link bold">
-            <Link to="/rsvp">Please RSVP by 31st March</Link>
+            <Link to="/rsvp">
+              <b>Please RSVP by 31st March</b>
+            </Link>
           </p>
         </div>
       </div>
