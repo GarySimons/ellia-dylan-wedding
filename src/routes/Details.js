@@ -15,7 +15,7 @@ const Details = () => {
       <div className="main-container">
         <h1 className="page-heading">Details</h1>
         <div className="page-content-container">
-          <p className="page-text bold overline">Date</p>
+          <p className="page-text bold">Date</p>
           <p className="page-text margin-bottom">Saturday 23rd May 2026</p>
 
           <p className="page-text bold overline">Location</p>

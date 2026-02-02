@@ -48,7 +48,8 @@ const Home = () => {
           <p className="home-date">23.05.26</p>
           <hr className="home-line" />
           <p className="home-address">
-            SOUTH STOKE BARN, ARUNDEL, WEST SUSSEX, BN18 9PF
+            SOUTH STOKE BARN, ARUNDEL, <br className="mobile-break" />
+            WEST SUSSEX, BN18 9PF
           </p>
         </div>
         <img

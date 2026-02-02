@@ -44,6 +44,14 @@ code {
   }
 }
 
+.mobile-break {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
 .main-container-password {
   display: flex;
   flex-direction: column;
