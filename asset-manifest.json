@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.906e3bd5.css",
-    "main.js": "/static/js/main.64dc39bd.js",
+    "main.js": "/static/js/main.127d61a1.js",
     "static/media/barn-door.png": "/static/media/barn-door.ae3140dbf63f09cbcdd9.png",
     "static/media/south_stoke_barn.png": "/static/media/south_stoke_barn.1e60cec0e4706fc53dcc.png",
     "static/media/red-dress.png": "/static/media/red-dress.728f9c2264bd5c8c6ebc.png",
@@ -30,10 +30,10 @@
     "static/media/flower-5.png": "/static/media/flower-5.62acd846e1a86e5b11dc.png",
     "index.html": "/index.html",
     "main.906e3bd5.css.map": "/static/css/main.906e3bd5.css.map",
-    "main.64dc39bd.js.map": "/static/js/main.64dc39bd.js.map"
+    "main.127d61a1.js.map": "/static/js/main.127d61a1.js.map"
   },
   "entrypoints": [
     "static/css/main.906e3bd5.css",
-    "static/js/main.64dc39bd.js"
+    "static/js/main.127d61a1.js"
   ]
 }
