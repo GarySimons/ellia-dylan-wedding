@@ -77,10 +77,12 @@ const Details = () => {
             contact:
           </p>
           <a href="mailto:lauren@macgregorandmacduff.co.uk">
-            <p className="page-text link margin-link-bottom">
-              lauren@macgregorandmacduff.co.uk
-            </p>
+            <p className="page-text link ">lauren@macgregorandmacduff.co.uk</p>
           </a>
+          <p className="page-text margin-bottom">
+            Please note our party must be named on their booking system with
+            their selected rental items by <b>21st February</b>.
+          </p>
 
           <p className="page-text bold overline">Gifts</p>
           <p className="page-text">
