@@ -63,7 +63,7 @@ const Details = () => {
 
           <p className="page-text">You can view what is available here:</p>
           <a
-            href="https://macgregorandmacduff.co.uk/collections/kilt-hire "
+            href="https://macgregorandmacduff.co.uk/collections/kilt-hire"
             target="_blank"
             rel="noopener noreferrer"
           >
