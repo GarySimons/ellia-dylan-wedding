@@ -42,6 +42,7 @@ const RsvpForm = () => {
   ];
 
   const [status, setStatus] = useState("");
+  const [closeSentMessage, setCloseSentMessage] = useState(false);
 
   useEffect(() => {
     const savedData = localStorage.getItem("saveFormData");
@@ -117,7 +118,14 @@ const RsvpForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setStatus("Message sent successfully! Thank you");
+          setStatus(
+            <>
+              <p>
+                Message sent successfully! <br />
+                Thank you
+              </p>
+            </>,
+          );
           setFormData({
             email: "",
             attendance: "",
@@ -133,7 +141,7 @@ const RsvpForm = () => {
         },
       )
       .finally(() => {
-        setTimeout(() => setStatus(""), 4000);
+        setCloseSentMessage(false);
       });
   };
 
@@ -151,6 +159,10 @@ const RsvpForm = () => {
 
   const guest1NameEntered = formData.guest1.name.trim() !== "";
   const guest2NameEntered = formData.guest2.name.trim() !== "";
+
+  const closeMessage = () => {
+    setCloseSentMessage(true);
+  };
 
   return (
     <div className="contact-form">
@@ -465,9 +477,13 @@ const RsvpForm = () => {
         )}
       </form>
 
-      {status && (
+      {status && !closeSentMessage && (
         <div className="success-message">
-          <p>{status}</p>
+          <p></p>
+          {status}
+          <p className="close-button" onClick={closeMessage}>
+            close
+          </p>
         </div>
       )}
     </div>
